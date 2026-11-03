@@ -1,0 +1,274 @@
+{
+  "run_id": "20261103T154855Z_normalize",
+  "started_at": "2026-11-03T15:48:55.735989+00:00",
+  "completed_at": "2026-11-03T15:48:57.493168+00:00",
+  "code_revision": "81009c8a85fe465eaf2d98ef449ac17fb711af42",
+  "git_dirty": false,
+  "processing_crs": "EPSG:32643",
+  "crs_status": "proposed, not approved",
+  "boundary_version": "boundary_pilot_v1",
+  "boundary_checksum_sha256": "a2366445c67e2b6e84aac0e255e8460a4e1d697ecf402b4d459af1e09f97352f",
+  "method": "clip to zone circle; split by geometry family; LineString-only roads",
+  "outputs": [
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\roads_hsr.gpkg",
+      "layer": "roads_hsr",
+      "source_id": "osm_roads_2026_11",
+      "zone_id": "hsr",
+      "geometry_family": "line",
+      "raw_file": "osm_roads_2026_11_hsr.gpkg",
+      "raw_sha256": "b7c05fc033b8d7c952b31f837856bf03e4ad2ef81e576b387f770fcf4e54da53",
+      "pre_clip": {
+        "count": 4782,
+        "length_km": 614.559
+      },
+      "post_clip": {
+        "count": 4782,
+        "length_km": 557.386
+      },
+      "clipped_features": 210,
+      "invalid_after_clip": 0,
+      "sha256": "d2bff4a2ba7bda2a6ca69123e66f22e41688a57fee96fdddf87cd3322972500d"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\road_nodes_hsr.gpkg",
+      "layer": "road_nodes_hsr",
+      "source_id": "osm_roads_2026_11",
+      "zone_id": "hsr",
+      "geometry_family": "point",
+      "raw_file": "osm_roads_2026_11_hsr.gpkg",
+      "raw_sha256": "b7c05fc033b8d7c952b31f837856bf03e4ad2ef81e576b387f770fcf4e54da53",
+      "pre_clip": {
+        "count": 854
+      },
+      "post_clip": {
+        "count": 854
+      },
+      "clipped_features": 0,
+      "invalid_after_clip": 0,
+      "sha256": "a756dd79eca81b63b047c691eaf44a6a5fa6a4fb009ec891dab1992983eae6a7"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\roads_whitefield.gpkg",
+      "layer": "roads_whitefield",
+      "source_id": "osm_roads_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "line",
+      "raw_file": "osm_roads_2026_11_whitefield.gpkg",
+      "raw_sha256": "c3f4461daab7376a802ada2e2ea24d8de53de826a0f2b76efed21bafae8148c8",
+      "pre_clip": {
+        "count": 3107,
+        "length_km": 476.982
+      },
+      "post_clip": {
+        "count": 3107,
+        "length_km": 384.268
+      },
+      "clipped_features": 181,
+      "invalid_after_clip": 0,
+      "sha256": "67960d6149a24fe8e0c70782d1f8b78f2cfe0a2e4af730f27582054202214326"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\road_nodes_whitefield.gpkg",
+      "layer": "road_nodes_whitefield",
+      "source_id": "osm_roads_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "point",
+      "raw_file": "osm_roads_2026_11_whitefield.gpkg",
+      "raw_sha256": "c3f4461daab7376a802ada2e2ea24d8de53de826a0f2b76efed21bafae8148c8",
+      "pre_clip": {
+        "count": 330
+      },
+      "post_clip": {
+        "count": 330
+      },
+      "clipped_features": 0,
+      "invalid_after_clip": 0,
+      "sha256": "95310e88a182d7826fb80253a543e9f6962f06917c3421a6d0d549f6face1f30"
+    },
+    {
+      "destination": "quarantine",
+      "file": "data\\interim\\quarantine\\20261103T154855Z_normalize\\osm_roads_2026_11_whitefield_polygon.gpkg",
+      "source_id": "osm_roads_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "polygon",
+      "pre_clip": {
+        "count": 8,
+        "area_km2": 0.0139
+      },
+      "sha256": "6739a58cc57015cbdec249d30a221e0a6c1c6e5a76594570d88ca4627a3ba24d"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\water_lines_hsr.gpkg",
+      "layer": "water_lines_hsr",
+      "source_id": "osm_water_2026_11",
+      "zone_id": "hsr",
+      "geometry_family": "line",
+      "raw_file": "osm_water_2026_11_hsr.gpkg",
+      "raw_sha256": "e5f2f2de685498321e13726929be90777feb07be19635360c31729ea25bcf8bc",
+      "pre_clip": {
+        "count": 84,
+        "length_km": 24.98
+      },
+      "post_clip": {
+        "count": 84,
+        "length_km": 20.688
+      },
+      "clipped_features": 7,
+      "invalid_after_clip": 0,
+      "sha256": "86a9329df00801b78d287ecc4bf14e967fc55e06df8ca432b811d202a85105bd"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\water_polygons_hsr.gpkg",
+      "layer": "water_polygons_hsr",
+      "source_id": "osm_water_2026_11",
+      "zone_id": "hsr",
+      "geometry_family": "polygon",
+      "raw_file": "osm_water_2026_11_hsr.gpkg",
+      "raw_sha256": "e5f2f2de685498321e13726929be90777feb07be19635360c31729ea25bcf8bc",
+      "pre_clip": {
+        "count": 38,
+        "area_km2": 4.5122
+      },
+      "post_clip": {
+        "count": 38,
+        "area_km2": 1.2192
+      },
+      "clipped_features": 6,
+      "invalid_after_clip": 0,
+      "sha256": "1ac937de40d4a95df80259c38b39c47f4e23b294440687c052322a34514a56c3"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\water_lines_whitefield.gpkg",
+      "layer": "water_lines_whitefield",
+      "source_id": "osm_water_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "line",
+      "raw_file": "osm_water_2026_11_whitefield.gpkg",
+      "raw_sha256": "d1019de5584e7627a475abc24f3b9a434dc3c4ab190618d4b317b3e57634254d",
+      "pre_clip": {
+        "count": 118,
+        "length_km": 35.597
+      },
+      "post_clip": {
+        "count": 118,
+        "length_km": 24.828
+      },
+      "clipped_features": 9,
+      "invalid_after_clip": 0,
+      "sha256": "d5fd236c08e9e93ec3a891afc3fc9fa1825aa04f48fcee8ea3c5c14f237183e4"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\water_polygons_whitefield.gpkg",
+      "layer": "water_polygons_whitefield",
+      "source_id": "osm_water_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "polygon",
+      "raw_file": "osm_water_2026_11_whitefield.gpkg",
+      "raw_sha256": "d1019de5584e7627a475abc24f3b9a434dc3c4ab190618d4b317b3e57634254d",
+      "pre_clip": {
+        "count": 21,
+        "area_km2": 1.791
+      },
+      "post_clip": {
+        "count": 21,
+        "area_km2": 0.5888
+      },
+      "clipped_features": 3,
+      "invalid_after_clip": 0,
+      "sha256": "1ae048cd9257c206f91daeea9a90212adf6e73d1e7ee6705e4d63fcce0bb14a4"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\facilities_points_hsr.gpkg",
+      "layer": "facilities_points_hsr",
+      "source_id": "osm_facilities_2026_11",
+      "zone_id": "hsr",
+      "geometry_family": "point",
+      "raw_file": "osm_facilities_2026_11_hsr.gpkg",
+      "raw_sha256": "b6e20954e361f07ee6630fa3ca76a67b0664e11cc073c38c760c8d937b8f53d8",
+      "pre_clip": {
+        "count": 289
+      },
+      "post_clip": {
+        "count": 289
+      },
+      "clipped_features": 0,
+      "invalid_after_clip": 0,
+      "sha256": "db32ac15d538471c519d03726530e0d3d99a0df0aad038f5ef0e52103f6e61f8"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\facilities_polygons_hsr.gpkg",
+      "layer": "facilities_polygons_hsr",
+      "source_id": "osm_facilities_2026_11",
+      "zone_id": "hsr",
+      "geometry_family": "polygon",
+      "raw_file": "osm_facilities_2026_11_hsr.gpkg",
+      "raw_sha256": "b6e20954e361f07ee6630fa3ca76a67b0664e11cc073c38c760c8d937b8f53d8",
+      "pre_clip": {
+        "count": 59,
+        "area_km2": 0.2747
+      },
+      "post_clip": {
+        "count": 59,
+        "area_km2": 0.2473
+      },
+      "clipped_features": 3,
+      "invalid_after_clip": 0,
+      "sha256": "aefe0ea6618f74cbd301a7180fead71fb3001b83703fa21af8025b653e5ab849"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\facilities_points_whitefield.gpkg",
+      "layer": "facilities_points_whitefield",
+      "source_id": "osm_facilities_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "point",
+      "raw_file": "osm_facilities_2026_11_whitefield.gpkg",
+      "raw_sha256": "3dfe6d54ca3e2099508ed6365cb8f1568fca54cd62a27cb6a30c304182b0fe49",
+      "pre_clip": {
+        "count": 102
+      },
+      "post_clip": {
+        "count": 102
+      },
+      "clipped_features": 0,
+      "invalid_after_clip": 0,
+      "sha256": "c1ac1a515acf8976227c00287b1b4a887f2900fe315fd5c47cb2e78ce728c7b8"
+    },
+    {
+      "destination": "processed",
+      "file": "data\\processed\\20261103T154855Z_normalize\\facilities_polygons_whitefield.gpkg",
+      "layer": "facilities_polygons_whitefield",
+      "source_id": "osm_facilities_2026_11",
+      "zone_id": "whitefield",
+      "geometry_family": "polygon",
+      "raw_file": "osm_facilities_2026_11_whitefield.gpkg",
+      "raw_sha256": "3dfe6d54ca3e2099508ed6365cb8f1568fca54cd62a27cb6a30c304182b0fe49",
+      "pre_clip": {
+        "count": 35,
+        "area_km2": 0.7856
+      },
+      "post_clip": {
+        "count": 35,
+        "area_km2": 0.6906
+      },
+      "clipped_features": 4,
+      "invalid_after_clip": 0,
+      "sha256": "dcff1191707d6095312c24477f8dac7b4c195419c3e99331a09660d05b5e16b6"
+    }
+  ],
+  "warnings": [
+    "osm_roads_2026_11_whitefield.gpkg: 8 polygon feature(s) quarantined"
+  ],
+  "rights_status": "review_required (ODbL; no legal review done)"
+}
