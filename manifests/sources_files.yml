@@ -1,0 +1,50 @@
+# Generated from manifests/runs/*.json; verified against checksums_2026_11.txt
+files:
+  - file: osm_facilities_2026_11_hsr.gpkg
+    source_id: "osm_facilities_2026_11"
+    zone_id: "hsr"
+    run_id: "20261103T140940Z_download"
+    accessed_at: "2026-11-03T15:02:27.833311+00:00"
+    feature_count: 348
+    crs: "epsg:4326"
+    checksum_sha256: "b6e20954e361f07ee6630fa3ca76a67b0664e11cc073c38c760c8d937b8f53d8"
+  - file: osm_facilities_2026_11_whitefield.gpkg
+    source_id: "osm_facilities_2026_11"
+    zone_id: "whitefield"
+    run_id: "20261103T140940Z_download"
+    accessed_at: "2026-11-03T15:06:57.661185+00:00"
+    feature_count: 137
+    crs: "epsg:4326"
+    checksum_sha256: "3dfe6d54ca3e2099508ed6365cb8f1568fca54cd62a27cb6a30c304182b0fe49"
+  - file: osm_roads_2026_11_hsr.gpkg
+    source_id: "osm_roads_2026_11"
+    zone_id: "hsr"
+    run_id: "20261103T140940Z_download"
+    accessed_at: "2026-11-03T14:09:40.704301+00:00"
+    feature_count: 5636
+    crs: "epsg:4326"
+    checksum_sha256: "b7c05fc033b8d7c952b31f837856bf03e4ad2ef81e576b387f770fcf4e54da53"
+  - file: osm_roads_2026_11_whitefield.gpkg
+    source_id: "osm_roads_2026_11"
+    zone_id: "whitefield"
+    run_id: "20261103T151536Z_download"
+    accessed_at: "2026-11-03T15:16:39.261538+00:00"
+    feature_count: 3445
+    crs: "epsg:4326"
+    checksum_sha256: "c3f4461daab7376a802ada2e2ea24d8de53de826a0f2b76efed21bafae8148c8"
+  - file: osm_water_2026_11_hsr.gpkg
+    source_id: "osm_water_2026_11"
+    zone_id: "hsr"
+    run_id: "20261103T152743Z_download"
+    accessed_at: "2026-11-03T15:27:44.215303+00:00"
+    feature_count: 122
+    crs: "epsg:4326"
+    checksum_sha256: "e5f2f2de685498321e13726929be90777feb07be19635360c31729ea25bcf8bc"
+  - file: osm_water_2026_11_whitefield.gpkg
+    source_id: "osm_water_2026_11"
+    zone_id: "whitefield"
+    run_id: "20261103T140940Z_download"
+    accessed_at: "2026-11-03T15:05:16.231678+00:00"
+    feature_count: 139
+    crs: "epsg:4326"
+    checksum_sha256: "d1019de5584e7627a475abc24f3b9a434dc3c4ab190618d4b317b3e57634254d"
