@@ -43,3 +43,9 @@ lanes, oneway, bridge, tunnel, maxspeed, access. Values are OSM-defined, not har
 - Footways, paths, steps and construction roads are in `roads`. Filter on `highway`; P3 decides the classes.
 - Observation date/vintage not captured; only accessed_at.
 - Output is not in EPSG:4326. API delivery conversion is a later step.
+
+## Note on road_nodes
+Tagged OSM nodes found in the roads query (not network intersections or line vertices).
+HSR (854): street_lamp 477, crossing 200, bus_stop 105, traffic_signals 65, elevator 4,
+motorway_junction 1, stop 1, speed_camera 1; public_transport=platform on 101 rows (overlaps bus_stop);
+railway=subway_entrance 1. Not suitable for connectivity analysis. Whitefield not yet summarized.
