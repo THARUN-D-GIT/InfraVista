@@ -1,0 +1,35 @@
+{
+  "run_id": "20261103T151536Z_download",
+  "started_at": "2026-11-03T15:15:36.796338+00:00",
+  "completed_at": "2026-11-03T15:18:28.330140+00:00",
+  "osmnx_version": "2.1.1",
+  "processing_crs": "EPSG:32643",
+  "boundary_version": "boundary_pilot_v1",
+  "boundary_checksum_sha256": "a2366445c67e2b6e84aac0e255e8460a4e1d697ecf402b4d459af1e09f97352f",
+  "outputs": [
+    {
+      "source_id": "osm_roads_2026_11",
+      "zone_id": "whitefield",
+      "file": "data\\raw\\osm_roads_2026_11_whitefield.gpkg",
+      "accessed_at": "2026-11-03T15:16:39.261538+00:00",
+      "feature_count": 3445,
+      "geometry_types": {
+        "LineString": 3107,
+        "Point": 330,
+        "Polygon": 8
+      },
+      "crs": "epsg:4326",
+      "checksum_sha256": "c3f4461daab7376a802ada2e2ea24d8de53de826a0f2b76efed21bafae8148c8",
+      "osm_tags_requested": {
+        "highway": true
+      }
+    }
+  ],
+  "warnings": [
+    "osm_roads_2026_11_hsr.gpkg already existed; not overwritten",
+    "osm_water_2026_11/hsr: no data saved (ResponseStatusCodeError: 'overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRetry your request using exponential backoff: wait a short interval, then retry.\nIf the request fails again, double the wait time and retry again.\n\n## For heavy or automated use\n\nThis public endpoint is intended for browser-based and human-operated tools.\nFor automated or high-volume use, run a local Overpass API instance:\n\nhttps://github.com/b1tw153/Overpass-API/blob/main/README.md\n)",
+    "osm_facilities_2026_11_hsr.gpkg already existed; not overwritten",
+    "osm_water_2026_11_whitefield.gpkg already existed; not overwritten",
+    "osm_facilities_2026_11_whitefield.gpkg already existed; not overwritten"
+  ]
+}

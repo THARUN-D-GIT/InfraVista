@@ -1,0 +1,36 @@
+{
+  "run_id": "20261103T152743Z_download",
+  "started_at": "2026-11-03T15:27:43.861607+00:00",
+  "completed_at": "2026-11-03T15:28:49.989415+00:00",
+  "osmnx_version": "2.1.1",
+  "processing_crs": "EPSG:32643",
+  "boundary_version": "boundary_pilot_v1",
+  "boundary_checksum_sha256": "a2366445c67e2b6e84aac0e255e8460a4e1d697ecf402b4d459af1e09f97352f",
+  "outputs": [
+    {
+      "source_id": "osm_water_2026_11",
+      "zone_id": "hsr",
+      "file": "data\\raw\\osm_water_2026_11_hsr.gpkg",
+      "accessed_at": "2026-11-03T15:27:44.215303+00:00",
+      "feature_count": 122,
+      "geometry_types": {
+        "LineString": 84,
+        "Polygon": 36,
+        "MultiPolygon": 2
+      },
+      "crs": "epsg:4326",
+      "checksum_sha256": "e5f2f2de685498321e13726929be90777feb07be19635360c31729ea25bcf8bc",
+      "osm_tags_requested": {
+        "natural": "water",
+        "waterway": true
+      }
+    }
+  ],
+  "warnings": [
+    "osm_roads_2026_11_hsr.gpkg already existed; not overwritten",
+    "osm_facilities_2026_11_hsr.gpkg already existed; not overwritten",
+    "osm_roads_2026_11_whitefield.gpkg already existed; not overwritten",
+    "osm_water_2026_11_whitefield.gpkg already existed; not overwritten",
+    "osm_facilities_2026_11_whitefield.gpkg already existed; not overwritten"
+  ]
+}

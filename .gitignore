@@ -1,0 +1,16 @@
+﻿# data (raw/licensed/large inputs stay out of Git)
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# python / env
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

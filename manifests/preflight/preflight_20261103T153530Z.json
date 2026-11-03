@@ -1,0 +1,256 @@
+{
+  "created_at": "20261103T153530Z",
+  "proposed_crs_not_approved": 32643,
+  "rights_status": "review_required (ODbL; no legal review done)",
+  "results": [
+    {
+      "file": "osm_facilities_2026_11_hsr.gpkg",
+      "checks": {
+        "feature_count": 348,
+        "crs": "EPSG:4326",
+        "geometry_types": {
+          "Point": 289,
+          "Polygon": 59
+        },
+        "empty_or_null_geometry": 0,
+        "invalid_geometry": 0,
+        "bounds_4326": [
+          77.61565,
+          12.88956,
+          77.65772,
+          12.93025
+        ],
+        "bounds_outside_plausible_box": false,
+        "id_columns_found": [
+          "element",
+          "id"
+        ],
+        "duplicate_ids": 0,
+        "duplicate_geometries": 0,
+        "top_null_fractions": {
+          "health_facility:type": 0.997,
+          "addr:subdistrict": 0.997,
+          "addr:country": 0.997,
+          "religion": 0.997,
+          "boundary_type": 0.997,
+          "boundary": 0.997,
+          "barrier": 0.997,
+          "internet_access": 0.997
+        },
+        "column_count": 87
+      },
+      "warnings": [
+        "OSM completeness unverified: absence of a feature is not absence on the ground"
+      ],
+      "status": "PASS WITH LIMITATIONS"
+    },
+    {
+      "file": "osm_facilities_2026_11_whitefield.gpkg",
+      "checks": {
+        "feature_count": 137,
+        "crs": "EPSG:4326",
+        "geometry_types": {
+          "Point": 102,
+          "Polygon": 35
+        },
+        "empty_or_null_geometry": 0,
+        "invalid_geometry": 0,
+        "bounds_4326": [
+          77.72669,
+          12.94934,
+          77.77137,
+          12.98783
+        ],
+        "bounds_outside_plausible_box": false,
+        "id_columns_found": [
+          "element",
+          "id"
+        ],
+        "duplicate_ids": 0,
+        "duplicate_geometries": 0,
+        "top_null_fractions": {
+          "layer": 0.993,
+          "operator:wikidata": 0.993,
+          "payment:credit_cards": 0.993,
+          "payment:cash": 0.993,
+          "payment:debit_cards": 0.993,
+          "school:gender": 0.993,
+          "addr:district": 0.993,
+          "ref": 0.993
+        },
+        "column_count": 86
+      },
+      "warnings": [
+        "OSM completeness unverified: absence of a feature is not absence on the ground"
+      ],
+      "status": "PASS WITH LIMITATIONS"
+    },
+    {
+      "file": "osm_roads_2026_11_hsr.gpkg",
+      "checks": {
+        "feature_count": 5636,
+        "crs": "EPSG:4326",
+        "geometry_types": {
+          "LineString": 4782,
+          "Point": 854
+        },
+        "empty_or_null_geometry": 0,
+        "invalid_geometry": 0,
+        "bounds_4326": [
+          77.60098,
+          12.84675,
+          77.67687,
+          12.94574
+        ],
+        "bounds_outside_plausible_box": false,
+        "id_columns_found": [
+          "element",
+          "id"
+        ],
+        "duplicate_ids": 0,
+        "duplicate_geometries": 0,
+        "top_null_fractions": {
+          "platforms": 1.0,
+          "parking:both:restriction": 1.0,
+          "parking:right:restriction:conditional": 1.0,
+          "bridge:structure": 1.0,
+          "maxspeed:advisory": 1.0,
+          "truck": 1.0,
+          "trail_visibility": 1.0,
+          "steps": 1.0
+        },
+        "column_count": 160
+      },
+      "warnings": [
+        "OSM completeness unverified: absence of a feature is not absence on the ground"
+      ],
+      "status": "PASS WITH LIMITATIONS"
+    },
+    {
+      "file": "osm_roads_2026_11_whitefield.gpkg",
+      "checks": {
+        "feature_count": 3445,
+        "crs": "EPSG:4326",
+        "geometry_types": {
+          "LineString": 3107,
+          "Point": 330,
+          "Polygon": 8
+        },
+        "empty_or_null_geometry": 0,
+        "invalid_geometry": 0,
+        "bounds_4326": [
+          77.62686,
+          12.85521,
+          77.78553,
+          13.09205
+        ],
+        "bounds_outside_plausible_box": false,
+        "id_columns_found": [
+          "element",
+          "id"
+        ],
+        "duplicate_ids": 0,
+        "duplicate_geometries": 0,
+        "top_null_fractions": {
+          "material": 1.0,
+          "design": 1.0,
+          "restriction": 1.0,
+          "construction_end_expected": 1.0,
+          "wikidata": 1.0,
+          "short_name": 1.0,
+          "wikipedia": 1.0,
+          "indoor": 1.0
+        },
+        "column_count": 114
+      },
+      "warnings": [
+        "OSM completeness unverified: absence of a feature is not absence on the ground"
+      ],
+      "status": "PASS WITH LIMITATIONS"
+    },
+    {
+      "file": "osm_water_2026_11_hsr.gpkg",
+      "checks": {
+        "feature_count": 122,
+        "crs": "EPSG:4326",
+        "geometry_types": {
+          "LineString": 84,
+          "Polygon": 36,
+          "MultiPolygon": 2
+        },
+        "empty_or_null_geometry": 0,
+        "invalid_geometry": 0,
+        "bounds_4326": [
+          77.60912,
+          12.89061,
+          77.67991,
+          12.9514
+        ],
+        "bounds_outside_plausible_box": false,
+        "id_columns_found": [
+          "element",
+          "id"
+        ],
+        "duplicate_ids": 0,
+        "duplicate_geometries": 0,
+        "top_null_fractions": {
+          "wikimedia_commons": 0.992,
+          "wikipedia": 0.992,
+          "wikidata": 0.992,
+          "seamark:type": 0.992,
+          "note": 0.992,
+          "foot": 0.992,
+          "name:de": 0.992,
+          "alt_name": 0.984
+        },
+        "column_count": 20
+      },
+      "warnings": [
+        "OSM completeness unverified: absence of a feature is not absence on the ground"
+      ],
+      "status": "PASS WITH LIMITATIONS"
+    },
+    {
+      "file": "osm_water_2026_11_whitefield.gpkg",
+      "checks": {
+        "feature_count": 139,
+        "crs": "EPSG:4326",
+        "geometry_types": {
+          "LineString": 118,
+          "Polygon": 20,
+          "MultiPolygon": 1
+        },
+        "empty_or_null_geometry": 0,
+        "invalid_geometry": 0,
+        "bounds_4326": [
+          77.71843,
+          12.94102,
+          77.77906,
+          12.98912
+        ],
+        "bounds_outside_plausible_box": false,
+        "id_columns_found": [
+          "element",
+          "id"
+        ],
+        "duplicate_ids": 0,
+        "duplicate_geometries": 0,
+        "top_null_fractions": {
+          "alt_name": 0.993,
+          "boat": 0.993,
+          "type": 0.993,
+          "intermittent": 0.993,
+          "alt_name:en": 0.986,
+          "name": 0.964,
+          "name:kn": 0.964,
+          "water": 0.856
+        },
+        "column_count": 14
+      },
+      "warnings": [
+        "OSM completeness unverified: absence of a feature is not absence on the ground"
+      ],
+      "status": "PASS WITH LIMITATIONS"
+    }
+  ]
+}
