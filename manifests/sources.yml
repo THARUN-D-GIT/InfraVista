@@ -20,9 +20,9 @@
 
 - source_id: osm_roads_2026_11
   provider: "OpenStreetMap contributors"
-  product: "[how you download it: OSMnx / Overpass / Geofabrik extract]"
+  product: "OpenStreetMap live data via OSMnx ox.features_from_polygon (Overpass API), per-zone polygon; see src/infravista/ingest/download_osm.py"
   layer: "highway=*"
-  source_uri: "[exact URL or query]"
+  source_uri: "OSMnx features_from_polygon on the 2.5 km zone polygons of boundary_pilot_v1; tag filter in src/infravista/ingest/download_osm.py (code revision per run record)"
   accessed_at: "2026-11-03 (per-file times in manifests/sources_files.yml)"
   observed_at: "Live OSM data as of accessed_at; no extract date captured (accessed 2026-11-03)"
   crs: "EPSG:4326"
@@ -35,14 +35,14 @@
   limitations:
     - "Volunteer-mapped; completeness not guaranteed"
     - "Road status and attributes may be missing or outdated"
-  steward: "TBD"
+  steward: "Person 2"
   retention: "TBD"
 
 - source_id: osm_water_2026_11
   provider: "OpenStreetMap contributors"
-  product: "[same download method]"
+  product: "OpenStreetMap live data via OSMnx ox.features_from_polygon (Overpass API), per-zone polygon; see src/infravista/ingest/download_osm.py"
   layer: "natural=water, waterway=*"
-  source_uri: "[exact URL or query]"
+  source_uri: "OSMnx features_from_polygon on the 2.5 km zone polygons of boundary_pilot_v1; tag filter in src/infravista/ingest/download_osm.py (code revision per run record)"
   accessed_at: "2026-11-03 (per-file times in manifests/sources_files.yml)"
   observed_at: "Live OSM data as of accessed_at; no extract date captured (accessed 2026-11-03)"
   crs: "EPSG:4326"
@@ -55,14 +55,14 @@
   limitations:
     - "Lakes and drains may be incompletely mapped; storm drains are often missing"
     - "A missing water feature does not mean no water or drain exists"
-  steward: "TBD"
+  steward: "Person 2"
   retention: "TBD"
 
 - source_id: osm_facilities_2026_11
   provider: "OpenStreetMap contributors"
-  product: "[same download method]"
+  product: "OpenStreetMap live data via OSMnx ox.features_from_polygon (Overpass API), per-zone polygon; see src/infravista/ingest/download_osm.py"
   layer: "amenity=hospital|clinic|school|college, public_transport=*"
-  source_uri: "[exact URL or query]"
+  source_uri: "OSMnx features_from_polygon on the 2.5 km zone polygons of boundary_pilot_v1; tag filter in src/infravista/ingest/download_osm.py (code revision per run record)"
   accessed_at: "2026-11-03 (per-file times in manifests/sources_files.yml)"
   observed_at: "Live OSM data as of accessed_at; no extract date captured (accessed 2026-11-03)"
   crs: "EPSG:4326"
@@ -75,5 +75,7 @@
   limitations:
     - "Point vs polygon mapping is inconsistent"
     - "Facility counts are not a complete inventory"
-  steward: "TBD"
+  steward: "Person 2"
   retention: "TBD"
+
+
