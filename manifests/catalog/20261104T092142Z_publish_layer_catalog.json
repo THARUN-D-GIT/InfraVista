@@ -1,0 +1,590 @@
+{
+  "run_id": "20261104T092142Z_publish",
+  "created_at": "2026-11-04T09:21:42.706216+00:00",
+  "layers": [
+    {
+      "layer_id": "roads_hsr",
+      "title": "Roads (OSM highway ways) - hsr",
+      "zone_id": "hsr",
+      "evidence_type": "observed",
+      "geometry_type": "LineString",
+      "feature_count": 4782,
+      "source_ids": [
+        "osm_roads_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.615883,
+        12.889023,
+        77.661882,
+        12.934156
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible",
+        "includes_non_existing_status_classes"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish.",
+        "Includes construction, proposed, footway, path, steps and service ways; filter on highway. P3 decides which classes count."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/roads_hsr.geojson",
+      "sha256": "8fdd3f93e015c3fddc4b6bed79dc53253cbb1027845f4abb98ee4284e29df94c",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "road_nodes_hsr",
+      "title": "Tagged road-side points (street lamps, crossings, bus stops, signals) - hsr",
+      "zone_id": "hsr",
+      "evidence_type": "observed",
+      "geometry_type": "Point",
+      "feature_count": 854,
+      "source_ids": [
+        "osm_roads_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.616549,
+        12.889236,
+        77.659124,
+        12.930677
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible",
+        "not_network_nodes"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish.",
+        "Tagged points along roads, not network intersections or vertices; not suitable for connectivity analysis."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/road_nodes_hsr.geojson",
+      "sha256": "2fe8b5393d6e4474a23b8c8412fc8e379999d970d73c757becd833bdf4a7c385",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "roads_whitefield",
+      "title": "Roads (OSM highway ways) - whitefield",
+      "zone_id": "whitefield",
+      "evidence_type": "observed",
+      "geometry_type": "LineString",
+      "feature_count": 3107,
+      "source_ids": [
+        "osm_roads_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.726992,
+        12.947262,
+        77.77302,
+        12.99235
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible",
+        "includes_non_existing_status_classes"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish.",
+        "Includes construction, proposed, footway, path, steps and service ways; filter on highway. P3 decides which classes count."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/roads_whitefield.geojson",
+      "sha256": "1c601a84399724407a032bb65be361a4e65fc80e4d093cdce99a12ab1823b8ad",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "road_nodes_whitefield",
+      "title": "Tagged road-side points (street lamps, crossings, bus stops, signals) - whitefield",
+      "zone_id": "whitefield",
+      "evidence_type": "observed",
+      "geometry_type": "Point",
+      "feature_count": 330,
+      "source_ids": [
+        "osm_roads_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.729347,
+        12.948663,
+        77.771366,
+        12.989249
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible",
+        "not_network_nodes"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish.",
+        "Tagged points along roads, not network intersections or vertices; not suitable for connectivity analysis."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/road_nodes_whitefield.geojson",
+      "sha256": "bef03cf31b26e115b1ab89113b00c7082357d77fe65ee19f09fc4b0436e09c23",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "water_lines_hsr",
+      "title": "Water lines (OSM waterway) - hsr",
+      "zone_id": "hsr",
+      "evidence_type": "observed",
+      "geometry_type": "LineString",
+      "feature_count": 84,
+      "source_ids": [
+        "osm_water_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.616514,
+        12.891067,
+        77.653774,
+        12.933019
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/water_lines_hsr.geojson",
+      "sha256": "9d1ea5053aa51bef24443877942067826bff38012fa235d3f1b9c392e1f4ba44",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "water_polygons_hsr",
+      "title": "Water polygons (OSM natural=water) - hsr",
+      "zone_id": "hsr",
+      "evidence_type": "observed",
+      "geometry_type": "Polygon",
+      "feature_count": 38,
+      "source_ids": [
+        "osm_water_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.61591,
+        12.894591,
+        77.653821,
+        12.933033
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/water_polygons_hsr.geojson",
+      "sha256": "53ab4af25af445ea26a5ddadbfb1568094e93d0983b287104b344d5ecf2d2c9d",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "water_lines_whitefield",
+      "title": "Water lines (OSM waterway) - whitefield",
+      "zone_id": "whitefield",
+      "evidence_type": "observed",
+      "geometry_type": "LineString",
+      "feature_count": 118,
+      "source_ids": [
+        "osm_water_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.732075,
+        12.947247,
+        77.772654,
+        12.989121
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/water_lines_whitefield.geojson",
+      "sha256": "760539c12e807fdb4996761032e617b2537f7cbffbd5b15992af73558a58865a",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "water_polygons_whitefield",
+      "title": "Water polygons (OSM natural=water) - whitefield",
+      "zone_id": "whitefield",
+      "evidence_type": "observed",
+      "geometry_type": "Polygon",
+      "feature_count": 21,
+      "source_ids": [
+        "osm_water_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.733673,
+        12.947579,
+        77.76629,
+        12.988073
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/water_polygons_whitefield.geojson",
+      "sha256": "62653edf26b689a7197d1e773b825325d9320b7e09a10d268d9816f537d033f5",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "facilities_points_hsr",
+      "title": "Facilities and public transport (points) - hsr",
+      "zone_id": "hsr",
+      "evidence_type": "observed",
+      "geometry_type": "Point",
+      "feature_count": 289,
+      "source_ids": [
+        "osm_facilities_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.616097,
+        12.889561,
+        77.657297,
+        12.93025
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/facilities_points_hsr.geojson",
+      "sha256": "24ee6adf813e5303802ee51cd1499b43ad5997928afaf2e1a1ca2430af23fb2b",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "facilities_polygons_hsr",
+      "title": "Facilities and public transport (polygons) - hsr",
+      "zone_id": "hsr",
+      "evidence_type": "observed",
+      "geometry_type": "Polygon",
+      "feature_count": 59,
+      "source_ids": [
+        "osm_facilities_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.616195,
+        12.895575,
+        77.657724,
+        12.928927
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/facilities_polygons_hsr.geojson",
+      "sha256": "43939e7d8ff10b98add354a72d5e6a1141ff12b686fcd60f2f7bed36ca3357d7",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "facilities_points_whitefield",
+      "title": "Facilities and public transport (points) - whitefield",
+      "zone_id": "whitefield",
+      "evidence_type": "observed",
+      "geometry_type": "Point",
+      "feature_count": 102,
+      "source_ids": [
+        "osm_facilities_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.731527,
+        12.956268,
+        77.771366,
+        12.987835
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/facilities_points_whitefield.geojson",
+      "sha256": "8e0f31125fed6ddf440c4a16b1aaa823dc033907ee707093f78a6018c4020eea",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    },
+    {
+      "layer_id": "facilities_polygons_whitefield",
+      "title": "Facilities and public transport (polygons) - whitefield",
+      "zone_id": "whitefield",
+      "evidence_type": "observed",
+      "geometry_type": "Polygon",
+      "feature_count": 35,
+      "source_ids": [
+        "osm_facilities_2026_11"
+      ],
+      "acquired_at": "2026-11-03",
+      "crs": "EPSG:4326",
+      "processing_crs": "EPSG:32643",
+      "processing_crs_status": "proposed, not approved",
+      "bbox_4326": [
+        77.726978,
+        12.949338,
+        77.763955,
+        12.986884
+      ],
+      "units": "meters in processing CRS; degrees in this file",
+      "method_version": "normalize.py@81009c8a85fe465eaf2d98ef449ac17fb711af42",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "rights_status": "review_required",
+      "quality_flags": [
+        "osm_completeness_unverified",
+        "clipped_at_boundary_possible"
+      ],
+      "limitations": [
+        "OpenStreetMap is volunteer mapped; completeness is unverified. A missing feature means unknown, not absent.",
+        "Geometries are clipped to a 2.5 km circle; clipped_at_boundary marks features cut at the edge.",
+        "No observation date captured; acquired_at is the download date.",
+        "Rights not cleared: ODbL, review_required. Team use only, do not publish."
+      ],
+      "boundary_version": "boundary_pilot_v1",
+      "run_id": "20261104T092142Z_publish",
+      "normalize_run_id": "20261103T154855Z_normalize",
+      "data_url": "data/processed/20261104T092142Z_publish/facilities_polygons_whitefield.geojson",
+      "sha256": "a483286e4d4a873674d811f65267d1e1b522f306b9f246792184c33bc04eb0c0",
+      "checks": {
+        "count_matches": true,
+        "crs": "EPSG:4326",
+        "invalid": 0,
+        "bbox_plausible": true
+      },
+      "note": "quality_flags inside the GeoJSON features is a semicolon-separated string; this catalog uses a list."
+    }
+  ]
+}
