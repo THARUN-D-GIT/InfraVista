@@ -5,6 +5,7 @@ A run record with checksums is written to manifests/runs/.
 """
 import hashlib
 import json
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -120,14 +121,43 @@ def main() -> None:
             print(f"  saved {len(gdf)} features -> {out.name}")
 
     run_id = started.strftime("%Y%m%dT%H%M%SZ") + "_download"
+    revision_result = subprocess.run(
+        ["git", "-C", str(ROOT), "rev-parse", "HEAD"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    code_revision = (
+        revision_result.stdout.strip()
+        if revision_result.returncode == 0
+        else None
+    )
+
+    status_result = subprocess.run(
+        ["git", "-C", str(ROOT), "status", "--porcelain"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    git_dirty = (
+        bool(status_result.stdout.strip())
+        if status_result.returncode == 0
+        else None
+    )
+
     manifest = {
         "run_id": run_id,
         "started_at": started.isoformat(),
         "completed_at": datetime.now(timezone.utc).isoformat(),
+        "code_revision": code_revision,
+        "git_dirty": git_dirty,
+        "rights_status": "review_required_internal_use_only",
         "osmnx_version": ox.__version__,
         "processing_crs": PROJECTED_CRS,
         "boundary_version": "boundary_pilot_v1",
-        "boundary_checksum_sha256": sha256_of(PROCESSED / "boundary_pilot_v1.gpkg"),
+        "boundary_checksum_sha256": sha256_of(
+            PROCESSED / "boundary_pilot_v1.gpkg"
+        ),
         "outputs": records,
         "warnings": warnings,
     }
