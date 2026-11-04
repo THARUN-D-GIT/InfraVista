@@ -19,3 +19,5 @@ observation date for individual features.
 OSM data is ODbL (attribution: © OpenStreetMap contributors). Storing and processing are
 recorded as allowed; derive, display and redistribute are review_required. No legal review
 has been done. Nothing here is cleared for publication.
+
+Detailed OSM terms review: docs/rights-review-osm.md
