@@ -138,6 +138,25 @@ def run(package, config_path, out_root):
                 value=length / 1000 / win_km2, units="km/km2", denominator=win_km2,
                 coverage_fraction=cov_all, quality_flags=wflags, source_ids=w_src,
                 acquired_at=w_date, run_id=run_id, geometry=win_geo))
+        # Total waterway density for the complete study window
+        all_length = water.waterway_total_length(wl)
+        iid = "waterway_density_km_per_km2_all"
+        indicator_ids.add(iid)
+
+        window_recs.append(make_record(
+            feature_id=f"{zone}_window_{iid}",
+            area_id=zone,
+            indicator_id=iid,
+            value=all_length / 1000 / win_km2,
+            units="km/km2",
+            denominator=win_km2,
+            coverage_fraction=cov_all,
+            quality_flags=wflags,
+            source_ids=w_src,
+            acquired_at=w_date,
+            run_id=run_id,
+            geometry=win_geo,
+        ))
         u_area = water.water_union(wp).area if len(wp) else 0.0
         indicator_ids.add("water_area_share")
         window_recs.append(make_record(

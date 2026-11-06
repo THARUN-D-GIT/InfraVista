@@ -5,6 +5,10 @@ import geopandas as gpd
 def waterway_length_by_type(lines_m):
     return lines_m.assign(length_m=lines_m.length).groupby("waterway")["length_m"].sum()
 
+def waterway_total_length(lines_m):
+    """Return total length across all mapped waterway types, in metres."""
+    return float(waterway_length_by_type(lines_m).sum())
+
 
 def waterway_length_by_cell(lines_m, grid):
     cut = gpd.overlay(lines_m[["feature_id", "geometry"]], grid[["cell_id", "geometry"]],

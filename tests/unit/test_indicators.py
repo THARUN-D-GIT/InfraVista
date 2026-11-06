@@ -89,3 +89,22 @@ def test_unknown_stays_null_in_record():
                     denominator=None, coverage_fraction=None, quality_flags=["a"], source_ids=["s"],
                     acquired_at="2026-11-03", run_id="r", geometry=None)
     assert r["value"] is None and r["denominator"] is None     # never coerced to 0
+
+def test_total_waterway_length_is_sum_of_all_types():
+    lines = gpd.GeoDataFrame(
+        {
+            "feature_id": ["w/1", "w/2"],
+            "waterway": ["drain", "stream"],
+        },
+        geometry=[
+            LineString([(0, 250), (500, 250)]),
+            LineString([(0, 750), (500, 750)]),
+        ],
+        crs=CRS,
+    )
+
+    by_type = water.waterway_length_by_type(lines)
+    total_length_m = water.waterway_total_length(lines)
+
+    assert total_length_m == pytest.approx(1000.0)
+    assert total_length_m == pytest.approx(by_type.sum())
