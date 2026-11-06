@@ -70,6 +70,20 @@ def test_overlapping_water_polygons_not_double_counted():
     assert water.water_union(wp).area == pytest.approx(15000.0)
 
 
+
+
+def test_waterway_length_by_type_is_preserved_in_grid():
+    grid = make_grid(_square_window(), 500, "t", CRS)
+    line = gpd.GeoDataFrame(
+        {"feature_id": ["w/1"], "waterway": ["drain"]},
+        geometry=[LineString([(0, 250), (1000, 250)])],
+        crs=CRS,
+    )
+    by_cell = water.waterway_length_by_type_by_cell(line, grid)
+    assert by_cell.loc[("t_g500_0_0", "drain")] == pytest.approx(500.0)
+    assert by_cell.loc[("t_g500_1_0", "drain")] == pytest.approx(500.0)
+    assert by_cell.sum() == pytest.approx(1000.0)
+
 def test_unknown_stays_null_in_record():
     r = make_record(feature_id="x", area_id="z", indicator_id="i", value=None, units="count",
                     denominator=None, coverage_fraction=None, quality_flags=["a"], source_ids=["s"],

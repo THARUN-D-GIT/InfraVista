@@ -13,6 +13,19 @@ def waterway_length_by_cell(lines_m, grid):
     return cut.groupby("cell_id")["length_m"].sum()
 
 
+
+
+def waterway_length_by_type_by_cell(lines_m, grid):
+    """Return waterway lengths by both grid cell and mapped OSM waterway type."""
+    cut = gpd.overlay(
+        lines_m[["feature_id", "waterway", "geometry"]],
+        grid[["cell_id", "geometry"]],
+        how="intersection",
+        keep_geom_type=True,
+    )
+    cut["length_m"] = cut.length
+    return cut.groupby(["cell_id", "waterway"])["length_m"].sum()
+
 def water_union(polys_m):
     """Union first so overlapping polygons are not double counted."""
     return polys_m.geometry.union_all() if hasattr(polys_m.geometry, "union_all") else polys_m.unary_union

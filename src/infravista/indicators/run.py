@@ -146,6 +146,14 @@ def run(package, config_path, out_root):
             quality_flags=wflags, source_ids=w_src, acquired_at=w_date, run_id=run_id, geometry=win_geo))
         wa = water.water_area_by_cell(wp, grid)
         wlc = water.waterway_length_by_cell(wl, grid)
+        wlc_by_type = water.waterway_length_by_type_by_cell(wl, grid)
+        waterway_types = sorted(wl["waterway"].dropna().astype(str).unique())
+
+        for wtype in waterway_types:
+            indicator_ids.add(f"waterway_density_km_per_km2_{wtype}")
+
+        indicator_ids.add("waterway_density_km_per_km2_all")
+
         for cell_id, row in gi.iterrows():
             geo = to_geojson_geom(row.geometry, crs)
             fl = cell_flags(row.coverage_fraction, cfg["min_coverage_for_density"]) + ["storm_drains_often_unmapped"]
@@ -161,6 +169,19 @@ def run(package, config_path, out_root):
                 value=float(wlc.get(cell_id, 0.0)) / 1000 / area_km2, units="km/km2",
                 denominator=area_km2, coverage_fraction=row.coverage_fraction, quality_flags=fl,
                 source_ids=w_src, acquired_at=w_date, run_id=run_id, geometry=geo))
+
+            for wtype in waterway_types:
+                iid = f"waterway_density_km_per_km2_{wtype}"
+                length_m = float(wlc_by_type.get((cell_id, wtype), 0.0))
+                type_flags = list(fl)
+                if length_m == 0:
+                    type_flags.append("none_mapped_not_confirmed_absent")
+                grid_recs.append(make_record(
+                    feature_id=f"{cell_id}_{iid}", area_id=zone, indicator_id=iid,
+                    value=length_m / 1000 / area_km2, units="km/km2",
+                    denominator=area_km2, coverage_fraction=row.coverage_fraction,
+                    quality_flags=type_flags, source_ids=w_src, acquired_at=w_date,
+                    run_id=run_id, geometry=geo))
 
     # ---- write outputs ---------------------------------------------------------------------
     def to_feature(rec):
