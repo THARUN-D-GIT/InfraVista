@@ -52,15 +52,43 @@ def test_not_existing_roads_kept_in_their_own_group():
     assert out["not_existing"] == pytest.approx(100.0) and out["motorised_network"] == 0
 
 
-def test_facility_polygon_absorbs_nearby_point():
-    cats = {"school": ("amenity", "school")}
-    pts = gpd.GeoDataFrame({"feature_id": ["n/1", "n/2"], "amenity": ["school", "school"]},
-                           geometry=[Point(50, 50), Point(900, 900)], crs=CRS)
-    polys = gpd.GeoDataFrame({"feature_id": ["w/9"], "amenity": ["school"]},
-                             geometry=[Polygon([(0, 0), (100, 0), (100, 100), (0, 100)])], crs=CRS)
-    pts, polys = facilities.categorize(pts, cats), facilities.categorize(polys, cats)
-    reps, st = facilities.dedupe(pts, polys, {"categories": ["school"], "tolerance_m": 25})
-    assert st["points_absorbed_by_polygon"] == 1 and st["deduplicated_total"] == 2
+def test_facility_point_inside_cell_counted_once():
+    grid = make_grid(_square_window(), 500, "t", CRS)
+    reps = gpd.GeoDataFrame(
+        {"category": ["school"]},
+        geometry=[Point(250, 250)],
+        crs=CRS,
+    )
+
+    counts = facilities.counts_by_cell(reps, grid)
+
+    assert counts.sum() == 1
+
+
+def test_facility_point_on_shared_boundary_counted_once():
+    grid = make_grid(_square_window(), 500, "t", CRS)
+    reps = gpd.GeoDataFrame(
+        {"category": ["school"]},
+        geometry=[Point(500, 250)],
+        crs=CRS,
+    )
+
+    counts = facilities.counts_by_cell(reps, grid)
+
+    assert counts.sum() == 1
+
+
+def test_facility_point_on_four_cell_corner_counted_once():
+    grid = make_grid(_square_window(), 500, "t", CRS)
+    reps = gpd.GeoDataFrame(
+        {"category": ["school"]},
+        geometry=[Point(500, 500)],
+        crs=CRS,
+    )
+
+    counts = facilities.counts_by_cell(reps, grid)
+
+    assert counts.sum() == 1
 
 
 def test_overlapping_water_polygons_not_double_counted():

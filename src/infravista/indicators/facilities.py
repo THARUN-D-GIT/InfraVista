@@ -49,6 +49,25 @@ def counts_by_category(reps, categories):
 
 
 def counts_by_cell(reps, grid):
-    j = gpd.sjoin(reps[["category", "geometry"]], grid[["cell_id", "geometry"]],
-                  predicate="within", how="inner")
-    return j.groupby(["cell_id", "category"]).size()
+    points = reps[["category", "geometry"]].reset_index(drop=True).copy()
+    points["_rep_id"] = range(len(points))
+
+    joined = gpd.sjoin(
+        points,
+        grid[["cell_id", "geometry"]],
+        predicate="intersects",
+        how="left",
+    )
+
+    # Keep only points that intersect a grid cell.
+    if joined["cell_id"].isna().any():
+        raise ValueError("Some facility representatives do not intersect any grid cell.")
+
+    # A point can intersect multiple cells on a boundary.
+    # Assign it to the cell with the smallest cell_id.
+    joined = (
+        joined.sort_values(["_rep_id", "cell_id"], kind="stable")
+        .drop_duplicates(subset="_rep_id", keep="first")
+    )
+
+    return joined.groupby(["cell_id", "category"]).size()
