@@ -1,0 +1,33 @@
+# P3 indicator configuration (EXAMPLE). Every value below is a PROPOSED assumption
+# until P1 approves it (indicator definitions, units, thresholds) and P6 reviews it.
+# The config hash is written into each run manifest.
+config_id: p3_indicators_pilot_v0
+processing_crs: "EPSG:32643"        # PROPOSED by P2, not approved by P1/P3/P4
+boundary_version: boundary_pilot_v1
+radius_m: 2500
+grid_cell_m: 500                    # P3 choice; agree with P1/P5 before API freeze
+min_coverage_for_density: 0.25      # cells with less window coverage get 'small_denominator'
+zones:                              # must match P2 download_osm.py (verify on openstreetmap.org)
+  hsr:        {lat: 12.9116, lon: 77.6389}
+  whitefield: {lat: 12.9698, lon: 77.7500}
+
+road_groups:                        # P1/P3 decide which classes count; P2 keeps all classes
+  motorised_network: [motorway, motorway_link, trunk, trunk_link, primary, primary_link,
+                      secondary, secondary_link, tertiary, tertiary_link, unclassified,
+                      residential, living_street]
+  service_and_track: [service, track]
+  pedestrian_cycle:  [footway, path, steps, cycleway, pedestrian]
+  not_existing:      [construction, proposed]   # reported separately, never mixed into existing
+  # any other highway value is reported as group 'other_unmapped_class'
+
+facility_categories:                # first match wins; (osm_key, osm_value)
+  hospital: [amenity, hospital]
+  clinic:   [amenity, clinic]
+  school:   [amenity, school]
+  college:  [amenity, college]
+  transit_platform:      [public_transport, platform]
+  transit_stop_position: [public_transport, stop_position]
+  transit_station:       [public_transport, station]
+facility_dedupe:                    # ASSUMPTION: a polygon absorbs same-category points near it
+  categories: [hospital, clinic, school, college]
+  tolerance_m: 25
