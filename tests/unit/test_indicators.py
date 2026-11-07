@@ -136,3 +136,37 @@ def test_total_waterway_length_is_sum_of_all_types():
 
     assert total_length_m == pytest.approx(1000.0)
     assert total_length_m == pytest.approx(by_type.sum())
+
+
+def test_facility_dedupe_absorbs_only_nearby_same_category_points():
+    polys = gpd.GeoDataFrame(
+        {
+            "feature_id": ["college_polygon"],
+            "category": ["college"],
+        },
+        geometry=[box(0, 0, 100, 100)],
+        crs=CRS,
+    )
+    points = gpd.GeoDataFrame(
+        {
+            "feature_id": ["near_college", "distant_college", "near_school"],
+            "category": ["college", "college", "school"],
+        },
+        geometry=[Point(110, 50), Point(130, 50), Point(50, 50)],
+        crs=CRS,
+    )
+    cfg = {"categories": ["hospital", "clinic", "school", "college"], "tolerance_m": 25}
+
+    reps, stats = facilities.dedupe(points, polys, cfg)
+
+    assert set(reps["feature_id"]) == {
+        "college_polygon",
+        "distant_college",
+        "near_school",
+    }
+    assert stats == {
+        "raw_points": 3,
+        "raw_polygons": 1,
+        "points_absorbed_by_polygon": 1,
+        "deduplicated_total": 3,
+    }
