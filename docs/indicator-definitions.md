@@ -11,7 +11,21 @@ Processing CRS: EPSG:32643 (proposed by P2, **not approved**). Outputs delivered
 | `waterway_density_km_per_km2_<type>` / `_all` | Length of OSM `waterway` lines per km² | km/km2 | area in window | Storm drains are often unmapped. |
 | `water_area_share` | Union area of `natural=water` polygons / area in window | fraction | area in window (m²) | Union avoids double counting. |
 
-Road groups (config `road_groups`): motorised_network, service_and_track, pedestrian_cycle, **not_existing** (construction, proposed — never mixed with existing), other_unmapped_class.
+## Road groups (proposed; pending P1 approval)
+
+The current P3 classification is configured in `config/indicators.yml`:
+
+| Group | OSM `highway` values |
+|---|---|
+| `motorised_network` | `motorway`, `motorway_link`, `trunk`, `trunk_link`, `primary`, `primary_link`, `secondary`, `secondary_link`, `tertiary`, `tertiary_link`, `unclassified`, `residential`, `living_street` |
+| `service_and_track` | `service`, `track` |
+| `pedestrian_cycle` | `footway`, `path`, `steps`, `cycleway`, `pedestrian` |
+| `not_existing` | `construction`, `proposed` |
+| `other_unmapped_class` | Any other `highway` value not listed above |
+
+Construction and proposed roads are retained separately and are never mixed with existing-road groups. Unknown highway values are retained under `other_unmapped_class`, not dropped or silently included in `motorised_network`.
+
+In the current Whitefield input, `corridor` (1 feature) and `road` (1 feature) are assigned to `other_unmapped_class`, pending classification review. The road-group definitions remain proposed until P1 approval.
 
 ## Missing vs zero (contract rule)
 - Cell value `0` carries flag `none_mapped_not_confirmed_absent`. P5 must show it as "none mapped", not "no infrastructure". **Decision needed (P1/P6/P5):** show as no-data instead?
