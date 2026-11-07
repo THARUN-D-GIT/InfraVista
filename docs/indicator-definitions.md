@@ -35,5 +35,5 @@ In the current Whitefield input, `corridor` (1 feature) and `road` (1 feature) a
 ## Open decisions
 1. Which road classes count as "existing road network" (P1 + P3).
 2. Grid size 500 m (P1/P5).
-3. De-dup tolerance 25 m (P3 + P6).
+3. Proposed de-duplication tolerance: 25 m; requires P1 approval and P6 review.
 4. Confirm processing CRS (P1/P3/P4).
