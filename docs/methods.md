@@ -4,7 +4,7 @@
 2. Reproject layers to the processing CRS (config). Never measure in degrees.
 3. Rebuild each 2.5 km study window from the zone centre (same as P2) and cut a fixed-origin 500 m grid; `cell_id` = `<zone>_g<size>_<ix>_<iy>` (absolute coordinates, stable across runs).
 4. Roads: classify `highway` into config groups; unknown classes → `other_unmapped_class` (reported, never dropped). Split lines at cell borders with an overlay; length in the projected CRS.
-5. Facilities: categorise by OSM tag; a polygon absorbs same-category points within 25 m (counted once). Raw and de-duplicated counts both logged in the run manifest.
+5. Facilities: categorise by OSM tag; a polygon absorbs same-category points within the proposed 25 m tolerance (counted once); this assumption requires P1 approval and P6 review. Raw and de-duplicated counts both logged in the run manifest.
 6. Water: waterway length by type; polygon union area share.
 7. Wrap each value in the canonical record (handbook §5), `evidence_type = derived`, quality flags, source IDs, `method_version`, `run_id`.
 8. Write outputs to a new `data/processed/p3/<run_id>/`; write the run manifest with config hash, git commit and input checksums. Existing runs are never overwritten.
