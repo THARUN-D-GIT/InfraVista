@@ -1,0 +1,61 @@
+{
+  "run_id": "20261106T151508Z_indicators",
+  "started_at": "2026-11-06T15:15:08.981479+00:00",
+  "completed_at": "2026-11-06T15:15:10.682973+00:00",
+  "method_version": "p3_indicators_v0.1.0",
+  "git_commit": "b2d6127070952b5be8513cbd5bd49db9af6b65a8",
+  "config_id": "p3_indicators_pilot_v0",
+  "config_hash": "4bc5b3facab09d7863a4aaf7709611633dd2596a382c8eb495d97473945fc4d1",
+  "input_package": ".\\handoff_data\\20261104T092142Z_publish.zip",
+  "input_run_id": "20261104T092142Z_publish",
+  "input_layer_sha256": {
+    "roads_hsr": "8fdd3f93e015c3fddc4b6bed79dc53253cbb1027845f4abb98ee4284e29df94c",
+    "road_nodes_hsr": "2fe8b5393d6e4474a23b8c8412fc8e379999d970d73c757becd833bdf4a7c385",
+    "roads_whitefield": "1c601a84399724407a032bb65be361a4e65fc80e4d093cdce99a12ab1823b8ad",
+    "road_nodes_whitefield": "bef03cf31b26e115b1ab89113b00c7082357d77fe65ee19f09fc4b0436e09c23",
+    "water_lines_hsr": "9d1ea5053aa51bef24443877942067826bff38012fa235d3f1b9c392e1f4ba44",
+    "water_polygons_hsr": "53ab4af25af445ea26a5ddadbfb1568094e93d0983b287104b344d5ecf2d2c9d",
+    "water_lines_whitefield": "760539c12e807fdb4996761032e617b2537f7cbffbd5b15992af73558a58865a",
+    "water_polygons_whitefield": "62653edf26b689a7197d1e773b825325d9320b7e09a10d268d9816f537d033f5",
+    "facilities_points_hsr": "24ee6adf813e5303802ee51cd1499b43ad5997928afaf2e1a1ca2430af23fb2b",
+    "facilities_polygons_hsr": "43939e7d8ff10b98add354a72d5e6a1141ff12b686fcd60f2f7bed36ca3357d7",
+    "facilities_points_whitefield": "8e0f31125fed6ddf440c4a16b1aaa823dc033907ee707093f78a6018c4020eea",
+    "facilities_polygons_whitefield": "a483286e4d4a873674d811f65267d1e1b522f306b9f246792184c33bc04eb0c0"
+  },
+  "processing_crs": "EPSG:32643",
+  "processing_crs_status": "proposed, not approved",
+  "boundary_version": "boundary_pilot_v1",
+  "evidence_type": "derived",
+  "validation_status": "not validated (P6 independent review pending)",
+  "rights_status": "review_required (inherits OSM/ODbL status from P2); team use only",
+  "indicator_ids": [
+    "facility_count_clinic",
+    "facility_count_college",
+    "facility_count_hospital",
+    "facility_count_school",
+    "facility_count_transit_platform",
+    "facility_count_transit_station",
+    "facility_count_transit_stop_position",
+    "road_density_km_per_km2_motorised_network",
+    "road_density_km_per_km2_not_existing",
+    "road_density_km_per_km2_other_unmapped_class",
+    "road_density_km_per_km2_pedestrian_cycle",
+    "road_density_km_per_km2_service_and_track",
+    "water_area_share",
+    "waterway_density_km_per_km2_all",
+    "waterway_density_km_per_km2_ditch",
+    "waterway_density_km_per_km2_drain",
+    "waterway_density_km_per_km2_lock_gate",
+    "waterway_density_km_per_km2_river",
+    "waterway_density_km_per_km2_stream",
+    "waterway_density_km_per_km2_weir"
+  ],
+  "outputs": {
+    "indicators_grid.geojson": "736781c1321cc1d99ea12daa8eefc2aa3b6fd92e450a37b314ee4144f79420ed",
+    "indicators_window.geojson": "5326680c7af9f0f1c2b75157912f71cddc1a16c52a8396acd205cdb224dbc18a"
+  },
+  "warnings": [
+    "hsr facility dedupe: {'raw_points': 289, 'raw_polygons': 59, 'points_absorbed_by_polygon': 10, 'deduplicated_total': 338}",
+    "whitefield facility dedupe: {'raw_points': 102, 'raw_polygons': 35, 'points_absorbed_by_polygon': 2, 'deduplicated_total': 135}"
+  ]
+}

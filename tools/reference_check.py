@@ -30,6 +30,18 @@ def lines(g):
         yield from g["coordinates"]
 
 
+def facility_key(properties):
+    # Mirror the configured P3 category precedence independently.
+    amenity = properties.get("amenity")
+    public_transport = properties.get("public_transport")
+
+    if amenity in {"hospital", "clinic", "school", "college"}:
+        return amenity
+    if public_transport in {"platform", "stop_position", "station"}:
+        return "pt:" + public_transport
+    return amenity or ("pt:" + str(public_transport))
+
+
 def main(zp):
     z = zipfile.ZipFile(zp)
     files = {n.replace("\\", "/").split("/")[-1]: n for n in z.namelist() if not n.endswith("/")}
@@ -47,11 +59,13 @@ def main(zp):
             print(f"roads {grp:22s} ways={cnt[grp]:5d} length_km~{tot[grp]/1000:8.2f} density~{tot[grp]/1000/area:6.2f} km/km2")
         pc = collections.Counter(); gc = collections.Counter()
         for f in load(f"facilities_points_{zone}"):
-            p = f["properties"]; pc[p.get("amenity") or ("pt:" + str(p.get("public_transport")))] += 1
+            pc[facility_key(f["properties"])] += 1
         for f in load(f"facilities_polygons_{zone}"):
-            p = f["properties"]; gc[p.get("amenity") or ("pt:" + str(p.get("public_transport")))] += 1
+            gc[facility_key(f["properties"])] += 1
+        combined = pc + gc
         print("facility points  (raw):", dict(pc))
         print("facility polygons(raw):", dict(gc))
+        print("facility combined (raw):", dict(combined))
         w = collections.Counter(f["properties"].get("waterway") for f in load(f"water_lines_{zone}"))
         print("waterway counts:", dict(w), "| water polygons:", len(load(f"water_polygons_{zone}")))
 

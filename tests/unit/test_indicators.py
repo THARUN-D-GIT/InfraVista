@@ -170,3 +170,63 @@ def test_facility_dedupe_absorbs_only_nearby_same_category_points():
         "points_absorbed_by_polygon": 1,
         "deduplicated_total": 3,
     }
+
+
+def _write_test_package(path, checksum_override=None, feature_count=1):
+    import hashlib
+    import json
+    import zipfile
+
+    geojson = {
+        "type": "FeatureCollection",
+        "features": [{
+            "type": "Feature",
+            "properties": {"quality_flags": ""},
+            "geometry": {"type": "Point", "coordinates": [77.6, 12.9]},
+        }],
+    }
+    raw = json.dumps(geojson).encode("utf-8")
+    catalog = {
+        "layers": [{
+            "layer_id": "sample",
+            "sha256": checksum_override or hashlib.sha256(raw).hexdigest(),
+            "feature_count": feature_count,
+        }]
+    }
+
+    with zipfile.ZipFile(path, "w") as archive:
+        archive.writestr("layer_catalog.json", json.dumps(catalog))
+        archive.writestr("sample.geojson", raw)
+
+
+def test_load_package_accepts_valid_checksums_and_feature_counts(tmp_path):
+    from infravista.indicators.io import load_package
+
+    package = tmp_path / "valid.zip"
+    _write_test_package(package)
+
+    catalog, layers = load_package(package)
+
+    assert len(catalog["layers"]) == 1
+    assert len(layers["sample"]) == 1
+    assert layers["sample"].iloc[0]["flags_list"] == []
+
+
+def test_load_package_rejects_checksum_mismatch(tmp_path):
+    from infravista.indicators.io import load_package
+
+    package = tmp_path / "bad_checksum.zip"
+    _write_test_package(package, checksum_override="0" * 64)
+
+    with pytest.raises(ValueError, match="checksum mismatch"):
+        load_package(package)
+
+
+def test_load_package_rejects_feature_count_mismatch(tmp_path):
+    from infravista.indicators.io import load_package
+
+    package = tmp_path / "bad_count.zip"
+    _write_test_package(package, feature_count=2)
+
+    with pytest.raises(ValueError, match="feature count mismatch"):
+        load_package(package)
