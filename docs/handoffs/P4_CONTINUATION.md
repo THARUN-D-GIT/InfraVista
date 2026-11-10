@@ -121,3 +121,46 @@ Proceed with P4 integration and evidence-based infrastructure gap analysis. Pres
 ### Next Milestone
 Develop evidence-based infrastructure planning recommendations, identifying the additional datasets and validation needed before making actual infrastructure investment or prioritization decisions.
 
+## Milestone 3 — Infrastructure Planning Recommendations
+
+**Status: Completed and tested**
+
+### Implementation
+- Created `src/infravista/screening/planning_recommendations.py`.
+- Generated `reports/p4_screening/infrastructure_planning_recommendations.json`.
+- Consumes the evidence-based gap-analysis report and `config/screening_rules.json`.
+- Produces sector-specific data collection actions, data-quality validation actions, and planning actions for HSR and Whitefield.
+- Preserves missing and null indicator evidence.
+- Handles known quality flags and provides a generic review action for unknown flags.
+- Preserves P3 run ID, method version, validation status, and rights status.
+
+### Planning Recommendations
+- Healthcare: population, facility capacity, service areas, and travel-time analysis.
+- Education: enrolment, student population, facility capacity, and accessibility.
+- Transport: road condition, connectivity, travel time, and traffic demand.
+- Water infrastructure: drainage completeness, flood history, rainfall, elevation, water supply, and sanitation coverage.
+
+### Methodological Safeguards
+- No arbitrary sector weights or infrastructure shortage scores.
+- No investment priorities assigned.
+- Recommendations are planning-readiness and evidence-collection actions, not confirmed infrastructure needs.
+- P3 validation and data rights remain pending review.
+
+### Testing
+- Test file: `tests/unit/test_planning_recommendations.py`.
+- Planning recommendation tests: **6 passed**.
+- Complete P3 + P4 test suite: **37 passed, 0 failed**.
+- Test runner: Pytest.
+- Python: 3.12.10 in project `.venv`.
+
+### Current P4 Progress
+1. P3 package audit — completed.
+2. P3 indicator loader — completed.
+3. Multi-sector screening rules — completed.
+4. Multi-sector screening engine — completed.
+5. Evidence-based gap analysis — completed.
+6. Infrastructure planning recommendations — completed.
+
+### Next Milestone
+Determine which validated external datasets are available and design an evidence-backed planning-readiness workflow before any infrastructure prioritization.
+
