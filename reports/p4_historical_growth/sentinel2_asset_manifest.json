@@ -1,0 +1,409 @@
+{
+  "source": "Copernicus Data Space Ecosystem STAC",
+  "collection": "sentinel-2-l2a",
+  "selected_dates": [
+    "2017-02-03",
+    "2025-02-06"
+  ],
+  "product_count": 6,
+  "products": [
+    {
+      "study_area": "hsr",
+      "date": "2017-02-03",
+      "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+      "platform": "sentinel-2a",
+      "cloud_cover": 0.0,
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classification map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/QI_DATA/MSK_CLDPRB_20m.jp2",
+          "type": "image/jp2",
+          "title": "Cloud probability (CLD) - 20m",
+          "roles": [
+            "data",
+            "gsd:20m"
+          ]
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_20m": {
+          "available": false
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "hsr",
+      "date": "2025-02-06",
+      "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+      "platform": "sentinel-2b",
+      "cloud_cover": 0.0,
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classfication map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": false
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_20m": {
+          "available": false
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2017-02-03",
+      "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017",
+      "platform": "sentinel-2a",
+      "cloud_cover": 0.03,
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classification map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/QI_DATA/MSK_CLDPRB_20m.jp2",
+          "type": "image/jp2",
+          "title": "Cloud probability (CLD) - 20m",
+          "roles": [
+            "data",
+            "gsd:20m"
+          ]
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_20m": {
+          "available": false
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2017-02-03",
+      "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+      "platform": "sentinel-2a",
+      "cloud_cover": 0.0,
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classification map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/QI_DATA/MSK_CLDPRB_20m.jp2",
+          "type": "image/jp2",
+          "title": "Cloud probability (CLD) - 20m",
+          "roles": [
+            "data",
+            "gsd:20m"
+          ]
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_20m": {
+          "available": false
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2025-02-06",
+      "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445",
+      "platform": "sentinel-2b",
+      "cloud_cover": 0.0,
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classfication map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": false
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_20m": {
+          "available": false
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2025-02-06",
+      "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+      "platform": "sentinel-2b",
+      "cloud_cover": 0.0,
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classfication map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": false
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_20m": {
+          "available": false
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Asset catalogue presence does not prove download access.",
+    "Pixel-level cloud and shadow coverage is not yet assessed.",
+    "Study-area raster coverage and alignment are not yet verified."
+  ]
+}

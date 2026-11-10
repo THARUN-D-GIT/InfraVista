@@ -1,0 +1,1076 @@
+{
+  "collection": "sentinel-2-l2a",
+  "method": "exact_study_area_scene_footprint_intersection",
+  "areas": {
+    "hsr": {
+      "2017": {
+        "verified_product_count": 4,
+        "rejected_product_count": 0,
+        "unique_acquisition_dates": 4,
+        "products": [
+          {
+            "product_id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PGQ_20230916T012105",
+            "acquisition_datetime": "2017-01-14T05:11:41.026000Z",
+            "acquisition_date": "2017-01-14",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.47,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PGQ_20230918T011518",
+            "acquisition_datetime": "2017-01-24T05:11:01.026000Z",
+            "acquisition_date": "2017-01-24",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.01,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+            "acquisition_datetime": "2017-02-03T05:10:11.026000Z",
+            "acquisition_date": "2017-02-03",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PGQ_20231025T175541",
+            "acquisition_datetime": "2017-02-23T05:08:11.026000Z",
+            "acquisition_date": "2017-02-23",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          }
+        ],
+        "acquisition_dates": {
+          "2017-01-14": [
+            {
+              "product_id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PGQ_20230916T012105",
+              "acquisition_datetime": "2017-01-14T05:11:41.026000Z",
+              "acquisition_date": "2017-01-14",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.47,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2017-01-24": [
+            {
+              "product_id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PGQ_20230918T011518",
+              "acquisition_datetime": "2017-01-24T05:11:01.026000Z",
+              "acquisition_date": "2017-01-24",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.01,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2017-02-03": [
+            {
+              "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+              "acquisition_datetime": "2017-02-03T05:10:11.026000Z",
+              "acquisition_date": "2017-02-03",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2017-02-23": [
+            {
+              "product_id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PGQ_20231025T175541",
+              "acquisition_datetime": "2017-02-23T05:08:11.026000Z",
+              "acquisition_date": "2017-02-23",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ]
+        }
+      },
+      "2025": {
+        "verified_product_count": 12,
+        "rejected_product_count": 0,
+        "unique_acquisition_dates": 12,
+        "products": [
+          {
+            "product_id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PGQ_20250102T080951",
+            "acquisition_datetime": "2025-01-02T05:12:21.024Z",
+            "acquisition_date": "2025-01-02",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 55.97,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PGQ_20250107T080132",
+            "acquisition_datetime": "2025-01-07T05:11:19.024Z",
+            "acquisition_date": "2025-01-07",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 1.23,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PGQ_20250112T082206",
+            "acquisition_datetime": "2025-01-12T05:11:51.024Z",
+            "acquisition_date": "2025-01-12",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 3.1,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PGQ_20250117T093134",
+            "acquisition_datetime": "2025-01-17T05:10:39.024Z",
+            "acquisition_date": "2025-01-17",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 23.13,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PGQ_20250122T084110",
+            "acquisition_datetime": "2025-01-22T05:11:51.025Z",
+            "acquisition_date": "2025-01-22",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PGQ_20250127T075517",
+            "acquisition_datetime": "2025-01-27T05:10:09.024Z",
+            "acquisition_date": "2025-01-27",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 4.03,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PGQ_20250201T095810",
+            "acquisition_datetime": "2025-02-01T05:11:01.025Z",
+            "acquisition_date": "2025-02-01",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 25.877291,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+            "acquisition_datetime": "2025-02-06T05:09:09.024Z",
+            "acquisition_date": "2025-02-06",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PGQ_20250211T102211",
+            "acquisition_datetime": "2025-02-11T05:10:01.025Z",
+            "acquisition_date": "2025-02-11",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.001635,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PGQ_20250216T073441",
+            "acquisition_datetime": "2025-02-16T05:08:09.024Z",
+            "acquisition_date": "2025-02-16",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PGQ_20250221T120413",
+            "acquisition_datetime": "2025-02-21T05:08:51.025Z",
+            "acquisition_date": "2025-02-21",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.000654,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PGQ_20250226T071341",
+            "acquisition_datetime": "2025-02-26T05:06:59.024Z",
+            "acquisition_date": "2025-02-26",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          }
+        ],
+        "acquisition_dates": {
+          "2025-01-02": [
+            {
+              "product_id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PGQ_20250102T080951",
+              "acquisition_datetime": "2025-01-02T05:12:21.024Z",
+              "acquisition_date": "2025-01-02",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 55.97,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-07": [
+            {
+              "product_id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PGQ_20250107T080132",
+              "acquisition_datetime": "2025-01-07T05:11:19.024Z",
+              "acquisition_date": "2025-01-07",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 1.23,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-12": [
+            {
+              "product_id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PGQ_20250112T082206",
+              "acquisition_datetime": "2025-01-12T05:11:51.024Z",
+              "acquisition_date": "2025-01-12",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 3.1,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-17": [
+            {
+              "product_id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PGQ_20250117T093134",
+              "acquisition_datetime": "2025-01-17T05:10:39.024Z",
+              "acquisition_date": "2025-01-17",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 23.13,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-22": [
+            {
+              "product_id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PGQ_20250122T084110",
+              "acquisition_datetime": "2025-01-22T05:11:51.025Z",
+              "acquisition_date": "2025-01-22",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-27": [
+            {
+              "product_id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PGQ_20250127T075517",
+              "acquisition_datetime": "2025-01-27T05:10:09.024Z",
+              "acquisition_date": "2025-01-27",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 4.03,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-01": [
+            {
+              "product_id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PGQ_20250201T095810",
+              "acquisition_datetime": "2025-02-01T05:11:01.025Z",
+              "acquisition_date": "2025-02-01",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 25.877291,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-06": [
+            {
+              "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+              "acquisition_datetime": "2025-02-06T05:09:09.024Z",
+              "acquisition_date": "2025-02-06",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-11": [
+            {
+              "product_id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PGQ_20250211T102211",
+              "acquisition_datetime": "2025-02-11T05:10:01.025Z",
+              "acquisition_date": "2025-02-11",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.001635,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-16": [
+            {
+              "product_id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PGQ_20250216T073441",
+              "acquisition_datetime": "2025-02-16T05:08:09.024Z",
+              "acquisition_date": "2025-02-16",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-21": [
+            {
+              "product_id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PGQ_20250221T120413",
+              "acquisition_datetime": "2025-02-21T05:08:51.025Z",
+              "acquisition_date": "2025-02-21",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.000654,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-26": [
+            {
+              "product_id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PGQ_20250226T071341",
+              "acquisition_datetime": "2025-02-26T05:06:59.024Z",
+              "acquisition_date": "2025-02-26",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ]
+        }
+      }
+    },
+    "whitefield": {
+      "2017": {
+        "verified_product_count": 8,
+        "rejected_product_count": 0,
+        "unique_acquisition_dates": 4,
+        "products": [
+          {
+            "product_id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PGQ_20230916T012105",
+            "acquisition_datetime": "2017-01-14T05:11:41.026000Z",
+            "acquisition_date": "2017-01-14",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.47,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PHQ_20230916T012105",
+            "acquisition_datetime": "2017-01-14T05:11:41.026000Z",
+            "acquisition_date": "2017-01-14",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 25.06,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PGQ_20230918T011518",
+            "acquisition_datetime": "2017-01-24T05:11:01.026000Z",
+            "acquisition_date": "2017-01-24",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.01,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PHQ_20230918T011518",
+            "acquisition_datetime": "2017-01-24T05:11:01.026000Z",
+            "acquisition_date": "2017-01-24",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 6.53,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+            "acquisition_datetime": "2017-02-03T05:10:11.026000Z",
+            "acquisition_date": "2017-02-03",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017",
+            "acquisition_datetime": "2017-02-03T05:10:11.026000Z",
+            "acquisition_date": "2017-02-03",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.03,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PGQ_20231025T175541",
+            "acquisition_datetime": "2017-02-23T05:08:11.026000Z",
+            "acquisition_date": "2017-02-23",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PHQ_20231025T175541",
+            "acquisition_datetime": "2017-02-23T05:08:11.026000Z",
+            "acquisition_date": "2017-02-23",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          }
+        ],
+        "acquisition_dates": {
+          "2017-01-14": [
+            {
+              "product_id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PGQ_20230916T012105",
+              "acquisition_datetime": "2017-01-14T05:11:41.026000Z",
+              "acquisition_date": "2017-01-14",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.47,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PHQ_20230916T012105",
+              "acquisition_datetime": "2017-01-14T05:11:41.026000Z",
+              "acquisition_date": "2017-01-14",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 25.06,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2017-01-24": [
+            {
+              "product_id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PGQ_20230918T011518",
+              "acquisition_datetime": "2017-01-24T05:11:01.026000Z",
+              "acquisition_date": "2017-01-24",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.01,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PHQ_20230918T011518",
+              "acquisition_datetime": "2017-01-24T05:11:01.026000Z",
+              "acquisition_date": "2017-01-24",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 6.53,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2017-02-03": [
+            {
+              "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+              "acquisition_datetime": "2017-02-03T05:10:11.026000Z",
+              "acquisition_date": "2017-02-03",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017",
+              "acquisition_datetime": "2017-02-03T05:10:11.026000Z",
+              "acquisition_date": "2017-02-03",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.03,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2017-02-23": [
+            {
+              "product_id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PGQ_20231025T175541",
+              "acquisition_datetime": "2017-02-23T05:08:11.026000Z",
+              "acquisition_date": "2017-02-23",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PHQ_20231025T175541",
+              "acquisition_datetime": "2017-02-23T05:08:11.026000Z",
+              "acquisition_date": "2017-02-23",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ]
+        }
+      },
+      "2025": {
+        "verified_product_count": 24,
+        "rejected_product_count": 0,
+        "unique_acquisition_dates": 12,
+        "products": [
+          {
+            "product_id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PGQ_20250102T080951",
+            "acquisition_datetime": "2025-01-02T05:12:21.024Z",
+            "acquisition_date": "2025-01-02",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 55.97,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PHQ_20250102T080951",
+            "acquisition_datetime": "2025-01-02T05:12:21.024Z",
+            "acquisition_date": "2025-01-02",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 41.85,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PGQ_20250107T080132",
+            "acquisition_datetime": "2025-01-07T05:11:19.024Z",
+            "acquisition_date": "2025-01-07",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 1.23,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PHQ_20250107T080132",
+            "acquisition_datetime": "2025-01-07T05:11:19.024Z",
+            "acquisition_date": "2025-01-07",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 12.04,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PGQ_20250112T082206",
+            "acquisition_datetime": "2025-01-12T05:11:51.024Z",
+            "acquisition_date": "2025-01-12",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 3.1,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PHQ_20250112T082206",
+            "acquisition_datetime": "2025-01-12T05:11:51.024Z",
+            "acquisition_date": "2025-01-12",
+            "platform": "sentinel-2a",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 6.12,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PGQ_20250117T093134",
+            "acquisition_datetime": "2025-01-17T05:10:39.024Z",
+            "acquisition_date": "2025-01-17",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 23.13,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PHQ_20250117T093134",
+            "acquisition_datetime": "2025-01-17T05:10:39.024Z",
+            "acquisition_date": "2025-01-17",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 82.76,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PGQ_20250122T084110",
+            "acquisition_datetime": "2025-01-22T05:11:51.025Z",
+            "acquisition_date": "2025-01-22",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PHQ_20250122T084110",
+            "acquisition_datetime": "2025-01-22T05:11:51.025Z",
+            "acquisition_date": "2025-01-22",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 19.79,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PGQ_20250127T075517",
+            "acquisition_datetime": "2025-01-27T05:10:09.024Z",
+            "acquisition_date": "2025-01-27",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 4.03,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PHQ_20250127T075517",
+            "acquisition_datetime": "2025-01-27T05:10:09.024Z",
+            "acquisition_date": "2025-01-27",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.18,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PGQ_20250201T095810",
+            "acquisition_datetime": "2025-02-01T05:11:01.025Z",
+            "acquisition_date": "2025-02-01",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 25.877291,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PHQ_20250201T095810",
+            "acquisition_datetime": "2025-02-01T05:11:01.025Z",
+            "acquisition_date": "2025-02-01",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 9.494909,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+            "acquisition_datetime": "2025-02-06T05:09:09.024Z",
+            "acquisition_date": "2025-02-06",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445",
+            "acquisition_datetime": "2025-02-06T05:09:09.024Z",
+            "acquisition_date": "2025-02-06",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PGQ_20250211T102211",
+            "acquisition_datetime": "2025-02-11T05:10:01.025Z",
+            "acquisition_date": "2025-02-11",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.001635,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PHQ_20250211T102211",
+            "acquisition_datetime": "2025-02-11T05:10:01.025Z",
+            "acquisition_date": "2025-02-11",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.001155,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PGQ_20250216T073441",
+            "acquisition_datetime": "2025-02-16T05:08:09.024Z",
+            "acquisition_date": "2025-02-16",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PHQ_20250216T073441",
+            "acquisition_datetime": "2025-02-16T05:08:09.024Z",
+            "acquisition_date": "2025-02-16",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PGQ_20250221T120413",
+            "acquisition_datetime": "2025-02-21T05:08:51.025Z",
+            "acquisition_date": "2025-02-21",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.000654,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PHQ_20250221T120413",
+            "acquisition_datetime": "2025-02-21T05:08:51.025Z",
+            "acquisition_date": "2025-02-21",
+            "platform": "sentinel-2c",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 2.7e-05,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PGQ_20250226T071341",
+            "acquisition_datetime": "2025-02-26T05:06:59.024Z",
+            "acquisition_date": "2025-02-26",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PGQ",
+            "cloud_cover_metadata": 0.0,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          },
+          {
+            "product_id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PHQ_20250226T071341",
+            "acquisition_datetime": "2025-02-26T05:06:59.024Z",
+            "acquisition_date": "2025-02-26",
+            "platform": "sentinel-2b",
+            "mgrs_tile": "43PHQ",
+            "cloud_cover_metadata": 0.01,
+            "processing_level": "L2",
+            "footprint_intersects": true
+          }
+        ],
+        "acquisition_dates": {
+          "2025-01-02": [
+            {
+              "product_id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PGQ_20250102T080951",
+              "acquisition_datetime": "2025-01-02T05:12:21.024Z",
+              "acquisition_date": "2025-01-02",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 55.97,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PHQ_20250102T080951",
+              "acquisition_datetime": "2025-01-02T05:12:21.024Z",
+              "acquisition_date": "2025-01-02",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 41.85,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-07": [
+            {
+              "product_id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PGQ_20250107T080132",
+              "acquisition_datetime": "2025-01-07T05:11:19.024Z",
+              "acquisition_date": "2025-01-07",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 1.23,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PHQ_20250107T080132",
+              "acquisition_datetime": "2025-01-07T05:11:19.024Z",
+              "acquisition_date": "2025-01-07",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 12.04,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-12": [
+            {
+              "product_id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PGQ_20250112T082206",
+              "acquisition_datetime": "2025-01-12T05:11:51.024Z",
+              "acquisition_date": "2025-01-12",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 3.1,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PHQ_20250112T082206",
+              "acquisition_datetime": "2025-01-12T05:11:51.024Z",
+              "acquisition_date": "2025-01-12",
+              "platform": "sentinel-2a",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 6.12,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-17": [
+            {
+              "product_id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PGQ_20250117T093134",
+              "acquisition_datetime": "2025-01-17T05:10:39.024Z",
+              "acquisition_date": "2025-01-17",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 23.13,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PHQ_20250117T093134",
+              "acquisition_datetime": "2025-01-17T05:10:39.024Z",
+              "acquisition_date": "2025-01-17",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 82.76,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-22": [
+            {
+              "product_id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PGQ_20250122T084110",
+              "acquisition_datetime": "2025-01-22T05:11:51.025Z",
+              "acquisition_date": "2025-01-22",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PHQ_20250122T084110",
+              "acquisition_datetime": "2025-01-22T05:11:51.025Z",
+              "acquisition_date": "2025-01-22",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 19.79,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-01-27": [
+            {
+              "product_id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PGQ_20250127T075517",
+              "acquisition_datetime": "2025-01-27T05:10:09.024Z",
+              "acquisition_date": "2025-01-27",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 4.03,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PHQ_20250127T075517",
+              "acquisition_datetime": "2025-01-27T05:10:09.024Z",
+              "acquisition_date": "2025-01-27",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.18,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-01": [
+            {
+              "product_id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PGQ_20250201T095810",
+              "acquisition_datetime": "2025-02-01T05:11:01.025Z",
+              "acquisition_date": "2025-02-01",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 25.877291,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PHQ_20250201T095810",
+              "acquisition_datetime": "2025-02-01T05:11:01.025Z",
+              "acquisition_date": "2025-02-01",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 9.494909,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-06": [
+            {
+              "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+              "acquisition_datetime": "2025-02-06T05:09:09.024Z",
+              "acquisition_date": "2025-02-06",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445",
+              "acquisition_datetime": "2025-02-06T05:09:09.024Z",
+              "acquisition_date": "2025-02-06",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-11": [
+            {
+              "product_id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PGQ_20250211T102211",
+              "acquisition_datetime": "2025-02-11T05:10:01.025Z",
+              "acquisition_date": "2025-02-11",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.001635,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PHQ_20250211T102211",
+              "acquisition_datetime": "2025-02-11T05:10:01.025Z",
+              "acquisition_date": "2025-02-11",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.001155,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-16": [
+            {
+              "product_id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PGQ_20250216T073441",
+              "acquisition_datetime": "2025-02-16T05:08:09.024Z",
+              "acquisition_date": "2025-02-16",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PHQ_20250216T073441",
+              "acquisition_datetime": "2025-02-16T05:08:09.024Z",
+              "acquisition_date": "2025-02-16",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-21": [
+            {
+              "product_id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PGQ_20250221T120413",
+              "acquisition_datetime": "2025-02-21T05:08:51.025Z",
+              "acquisition_date": "2025-02-21",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.000654,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PHQ_20250221T120413",
+              "acquisition_datetime": "2025-02-21T05:08:51.025Z",
+              "acquisition_date": "2025-02-21",
+              "platform": "sentinel-2c",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 2.7e-05,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ],
+          "2025-02-26": [
+            {
+              "product_id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PGQ_20250226T071341",
+              "acquisition_datetime": "2025-02-26T05:06:59.024Z",
+              "acquisition_date": "2025-02-26",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PGQ",
+              "cloud_cover_metadata": 0.0,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            },
+            {
+              "product_id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PHQ_20250226T071341",
+              "acquisition_datetime": "2025-02-26T05:06:59.024Z",
+              "acquisition_date": "2025-02-26",
+              "platform": "sentinel-2b",
+              "mgrs_tile": "43PHQ",
+              "cloud_cover_metadata": 0.01,
+              "processing_level": "L2",
+              "footprint_intersects": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Intersection verifies geometry overlap, not usable pixel coverage.",
+    "Scene cloud cover is not study-area cloud cover.",
+    "No imagery has been downloaded.",
+    "No classification or change detection has been performed."
+  ]
+}
