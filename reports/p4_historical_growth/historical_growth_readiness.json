@@ -1,0 +1,18 @@
+{
+  "report_metadata": {
+    "module": "infravista.screening.historical_growth",
+    "generated_at": "2026-11-10T17:36:55.634676+00:00",
+    "input_manifest": "config\\historical_imagery_manifest.json",
+    "analysis_type": "historical_imagery_readiness"
+  },
+  "historical_growth_readiness": {
+    "status": "not_available",
+    "ready_for_raster_analysis": false,
+    "errors": [
+      "Exactly two historical observations are required."
+    ],
+    "warnings": [],
+    "observations": []
+  },
+  "interpretation": "No historical growth conclusion is made by this module. A valid observation pair only permits subsequent raster-level analysis."
+}

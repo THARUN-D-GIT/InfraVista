@@ -516,3 +516,33 @@ P4 now includes a spatial visualization layer connecting existing ML cluster ass
 
 **Milestone 7: COMPLETED.**
 '@ | Add-Content -Path docs\handoffs\P4_CONTINUATION.md -Encoding utf8
+
+###  Milestone 8 - Historical-growth imagery readiness 
+
+Implemented:
+
+- `src/infravista/screening/historical_growth.py`
+- `tests/unit/test_historical_growth.py`
+- `config/historical_imagery_manifest.json`
+- `reports/p4_historical_growth/historical_growth_readiness.json`
+
+The readiness validator checks:
+
+- Exactly two historical observations.
+- Valid chronological observation dates.
+- Matching study areas and seasons.
+- Matching CRS and spatial resolution.
+- Documented cloud and NoData masks.
+- Rights status approved for the requested use.
+
+**Verified results:**
+- Dedicated tests: 15 passed.
+- Complete project test suite: 84 passed, 2 subtests passed.
+- Initial readiness report generated successfully.
+- Current status: `not_available`.
+- Raster analysis: `not_performed`.
+- Growth assessment: `not_assessed`.
+
+**Important limitation:** No suitable dated historical imagery pair has been supplied. The validator checks metadata only; it does not verify raster alignment, image quality, or actual urban growth. No conclusion of zero growth or infrastructure demand is permitted.
+
+**Next milestone:** Obtain suitable historical imagery and develop defensible growth indicators before proceeding to future infrastructure demand assessment.
