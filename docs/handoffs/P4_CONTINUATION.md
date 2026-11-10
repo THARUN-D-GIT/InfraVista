@@ -78,3 +78,46 @@ Result: 24 passed, 0 failed.
 
 Proceed with P4 integration and evidence-based infrastructure gap analysis. Preserve missing-data distinctions and existing quality warnings. Do not introduce arbitrary sector weights or claim service adequacy without demand, capacity, and accessibility evidence.
 
+## Milestone 2 — Evidence-Based Infrastructure Gap Analysis
+
+**Status: Completed**
+
+### Implementation
+- Created `src/infravista/screening/gap_analysis.py`.
+- Generated `reports/p4_screening/infrastructure_gap_analysis.json`.
+- Built gap analysis using the existing screening report and `config/screening_rules.json`.
+- Identified missing indicator evidence separately from null values.
+- Preserved actual zero values as valid available observations.
+- Identified sectors requiring data-quality review.
+- Included future data requirements for all four sectors.
+- Preserved P3 run ID, method version, validation status and rights status.
+
+### Study Area Results
+- HSR: 18 available indicators, 2 missing records, 0 null values.
+- Whitefield: 18 available indicators, 2 missing records, 0 null values.
+- Water infrastructure is the only sector with missing indicator records in both areas.
+- All four sectors require data-quality review.
+
+### Methodological Safeguards
+- No arbitrary sector weights or shortage scores.
+- No unsupported infrastructure adequacy or shortage claims.
+- No demand inference without population data.
+- Missing records are not treated as zero.
+- P3 validation and data rights remain pending review.
+
+### Testing
+- New test file: `tests/unit/test_gap_analysis.py`.
+- Gap-analysis tests: 7 passed.
+- Complete P3 + P4 unit suite: passed.
+- Test runner: Pytest.
+
+### Current P4 Progress
+1. P3 package audit — completed.
+2. P3 indicator loader — completed.
+3. Multi-sector screening rules — completed.
+4. Multi-sector screening engine — completed.
+5. Evidence-based gap analysis — completed.
+
+### Next Milestone
+Develop evidence-based infrastructure planning recommendations, identifying the additional datasets and validation needed before making actual infrastructure investment or prioritization decisions.
+
