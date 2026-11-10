@@ -341,3 +341,86 @@ Reasons:
 - Develop an interpretable prototype presentation/report layer for infrastructure screening.
 - Communicate cluster characteristics, area context, evidence limitations and data-quality warnings.
 - Keep recommendations evidence-based and avoid unsupported shortage or investment claims.
+
+## Milestone 6 — Integrated Report Generation
+
+**Status:** COMPLETED
+
+### Objective
+Integrate the P4 machine-learning cluster screening, infrastructure gap analysis, and planning recommendations into a single consolidated JSON and Markdown report.
+
+### Implementation
+
+**Module created:**
+- `src/infravista/screening/report_generator.py`
+
+**Tests created:**
+- `tests/unit/test_report_generator.py`
+
+### Source Reports
+1. `reports/p4_clustering/cluster_screening/cluster_screening_report.json`
+2. `reports/p4_screening/infrastructure_gap_analysis.json`
+3. `reports/p4_screening/infrastructure_planning_recommendations.json`
+
+### Generated Outputs
+- `reports/p4_reporting/infravista_screening_report.json`
+- `reports/p4_reporting/infravista_screening_report.md`
+
+Both reports generated successfully.
+
+### Integrated Report Coverage
+
+- Study areas: HSR and Whitefield
+- Grid cells: 201
+- ML features: 11
+- Provisional clusters: 3
+- Infrastructure sectors: 4
+- Sector assessments: 8 across both study areas
+- Available indicators per area: 18
+- Missing indicator records per area: 2
+- Null indicator values per area: 0
+
+### Cluster Distribution
+
+| Cluster | Grid Cells |
+|---|---:|
+| Cluster 0 | 52 |
+| Cluster 1 | 47 |
+| Cluster 2 | 102 |
+| **Total** | **201** |
+
+K=3 remains the provisional configuration. Cluster profiles are descriptive and do not establish investment priorities.
+
+### Report Contents
+
+The consolidated report includes:
+- Executive summary and project scope
+- ML methodology and cluster profiles
+- Study-area grid and cluster context
+- Sector-wise evidence assessments
+- Missing-data and quality assessments
+- Additional data collection requirements
+- Data provenance and governance
+- Limitations and conclusions
+
+### Validation and Testing
+
+- Focused report-generator tests: 12 passed
+- Complete unit-test suite: 61 passed
+- Full test execution time: 2.47 seconds
+- No test failures.
+
+### Limitations and Pending Reviews
+
+- P6 independent validation remains pending.
+- OSM/ODbL rights review remains pending.
+- Geometry coverage does not establish OSM data completeness.
+- Infrastructure shortages and service adequacy are not established.
+- Investment priorities are not assessed.
+- Results are exploratory and limited to the two pilot study areas.
+
+### Milestone Outcome
+
+P4 now has an integrated reporting pipeline combining evidence-based infrastructure screening, gap analysis, planning recommendations, and exploratory ML clustering into reproducible JSON and Markdown outputs.
+
+**Milestone 6: COMPLETED.**
