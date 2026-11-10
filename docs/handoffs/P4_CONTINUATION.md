@@ -294,3 +294,50 @@ Reasons:
 - Cluster labels are not priority rankings.
 
 **Next milestone:** Develop the prototype's cluster-based infrastructure screening output, including interpretable descriptions, evidence limitations, and quality warnings.
+
+### Milestone 5 — Cluster-Based Infrastructure Screening Completed
+
+**Module**
+- `src/infravista/screening/cluster_screening_output.py`
+
+**Test module**
+- `tests/unit/test_cluster_screening_output.py`
+
+**Generated outputs**
+- `reports/p4_clustering/cluster_screening/grid_cluster_screening.csv`
+- `reports/p4_clustering/cluster_screening/cluster_profile_summary.csv`
+- `reports/p4_clustering/cluster_screening/cluster_screening_report.json`
+
+**Implementation**
+- Integrated baseline K=3 assignments with the 11-feature raw indicator matrix and grid-level metadata.
+- Validated grid/area key consistency, feature values, cluster assignments and geometry coverage.
+- Preserved quality flags and coverage-review indicators.
+- Generated descriptive cluster profiles and area-wise cluster distributions.
+- Kept cluster descriptions separate from infrastructure priority rankings.
+- Did not infer infrastructure shortage, service adequacy or investment priority.
+
+**Verified results**
+- 201 grid cells.
+- 2 study areas: HSR and Whitefield.
+- 11 selected features.
+- 3 clusters.
+- Cluster 0: 52 cells.
+- Cluster 1: 47 cells.
+- Cluster 2: 102 cells.
+
+**Automated testing**
+- Focused cluster-screening tests: 12 passed.
+- Complete project unit-test suite: 49 passed.
+- No test failures.
+
+**Limitations**
+- Cluster patterns describe mapped OSM-derived indicators, not confirmed infrastructure availability.
+- Geometry coverage does not establish source completeness.
+- Only two pilot study areas are included.
+- Cluster IDs are descriptive and are not priority rankings.
+- P6 independent validation and OSM/ODbL rights review remain pending.
+
+**Next milestone**
+- Develop an interpretable prototype presentation/report layer for infrastructure screening.
+- Communicate cluster characteristics, area context, evidence limitations and data-quality warnings.
+- Keep recommendations evidence-based and avoid unsupported shortage or investment claims.
