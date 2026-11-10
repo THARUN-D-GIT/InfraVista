@@ -1,4 +1,4 @@
-\## Milestone 1 — Test Environment and Integration (2026-11-10)
+﻿\## Milestone 1 — Test Environment and Integration (2026-11-10)
 
 
 
@@ -515,7 +515,6 @@ Low-coverage cells are highlighted separately for data-quality review. They are 
 P4 now includes a spatial visualization layer connecting existing ML cluster assignments with validated grid geometries. The generated GeoJSON, CSV, summary statistics, cluster maps, and coverage-review map provide spatial interpretation of the existing screening results.
 
 **Milestone 7: COMPLETED.**
-'@ | Add-Content -Path docs\handoffs\P4_CONTINUATION.md -Encoding utf8
 
 ###  Milestone 8 - Historical-growth imagery readiness 
 
@@ -546,3 +545,55 @@ The readiness validator checks:
 **Important limitation:** No suitable dated historical imagery pair has been supplied. The validator checks metadata only; it does not verify raster alignment, image quality, or actual urban growth. No conclusion of zero growth or infrastructure demand is permitted.
 
 **Next milestone:** Obtain suitable historical imagery and develop defensible growth indicators before proceeding to future infrastructure demand assessment.
+
+### Milestone 9 - Historical urban-growth indicator design
+
+Created the proposed historical-growth indicator specification:
+
+- `config/historical_growth_rules.json`
+- `docs/historical_growth_methodology.md`
+- `tests/unit/test_historical_growth_rules.py`
+
+The methodology proposes satellite-derived built-up change as the primary historical-growth evidence, with P3 infrastructure indicators as supporting spatial evidence.
+
+#### Five proposed indicators
+
+1. Built-up area.
+2. New built-up area.
+3. Built-up area loss.
+4. Net built-up change.
+5. Built-up change percentage.
+
+#### Methodology and safeguards
+
+- Requires at least two chronological and comparable observations.
+- Requires documented cloud and NoData masks.
+- Requires compatible CRS, spatial resolution and raster alignment.
+- Requires documented built-up classification and accuracy assessment.
+- Requires rights clearance for the intended use.
+- Does not interpret missing observations as zero growth.
+- Does not infer infrastructure shortage from built-up expansion alone.
+- Keeps spatial development pattern classification as a future stage.
+
+Candidate imagery sources documented for assessment include Sentinel-2, Landsat and GHSL. These are candidates, not yet approved datasets.
+
+#### Verified testing
+
+- Historical-growth specification tests: 16 passed.
+- Complete project test suite: 100 passed, 7 subtests passed.
+- Full test execution time: 3.78 seconds.
+
+#### Current limitations
+
+- No verified historical imagery pair is available.
+- Raster preprocessing is not implemented.
+- Built-up classification method has not been selected.
+- Actual change detection has not been implemented.
+- Spatial growth-pattern analysis remains proposed.
+- Infrastructure demand assessment requires additional population, capacity and accessibility evidence.
+- P6 independent validation and OSM rights review remain pending.
+
+**Milestone outcome:** The historical-growth indicator framework, methodology and automated specification tests are complete. Actual historical growth measurement remains pending suitable imagery, approved methodology and raster-level validation.
+
+**Milestone 9: DESIGN AND SPECIFICATION COMPLETED; DATA-DEPENDENT ANALYSIS PENDING.**
+
