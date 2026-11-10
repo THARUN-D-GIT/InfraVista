@@ -232,3 +232,65 @@ Generated:
 - No infrastructure shortage or adequacy conclusions are established.
 
 **Next milestone:** Compare spatial cluster stability and raw infrastructure feature profiles across all three coverage thresholds.
+
+### Milestone 4 — Cluster Stability and Area Association Completed
+
+**Modules:**
+- `src/infravista/screening/ml_coverage_sensitivity.py`
+- `src/infravista/screening/ml_cluster_stability.py`
+
+**Outputs:**
+- `reports/p4_clustering/coverage_sensitivity/coverage_sensitivity_metrics.csv`
+- `reports/p4_clustering/coverage_sensitivity/coverage_sensitivity_assignments.csv`
+- `reports/p4_clustering/cluster_stability/cluster_feature_profiles.csv`
+- `reports/p4_clustering/cluster_stability/cluster_area_distribution.csv`
+- `reports/p4_clustering/cluster_stability/cluster_coverage_quality.csv`
+
+**Coverage sensitivity findings:**
+
+| Threshold | Retained cells | K=3 ARI | K=4 ARI |
+|---|---:|---:|---:|
+| Baseline | 201 | 1.0000 | 1.0000 |
+| >= 0.50 | 156 | 0.9596 | 0.7877 |
+| >= 0.75 | 141 | 0.9334 | 0.7470 |
+
+K=3 retained stronger assignment stability than K=4.
+
+**K=3 feature profile findings:**
+- Cluster 0: low mapped healthcare facility counts and relatively high waterway density.
+- Cluster 1: higher mapped healthcare, education and transit counts, with higher motorised road density.
+- Cluster 2: relatively low mapped waterway density and lower mapped facility counts.
+
+These are descriptive mapped-infrastructure profiles, not infrastructure adequacy or shortage classifications.
+
+**Area association analysis:**
+
+Cramér's V between study area and K=3 cluster membership:
+
+| Coverage threshold | Cramér's V |
+|---|---:|
+| Baseline | 0.3073 |
+| >= 0.50 | 0.3335 |
+| >= 0.75 | 0.3498 |
+
+Finding: moderate area–cluster association, increasing slightly under stricter coverage filtering. Cluster 0 is more represented in Whitefield, Cluster 1 in HSR, and Cluster 2 is relatively balanced.
+
+**Model selection decision:**
+
+Select K=3 as the primary provisional clustering configuration for the InfraVista prototype. Retain K=4 as a comparison experiment.
+
+Reasons:
+- Better assignment stability under coverage filtering.
+- More consistent raw feature profiles.
+- Reasonably balanced baseline cluster sizes.
+- More interpretable three-cluster structure.
+
+**Limitations:**
+- Only two pilot study areas are represented.
+- Spatial dependence between nearby grid cells has not been tested.
+- Cramér's V is descriptive; no independence-based significance conclusion is made.
+- Area association means the clusters should not be assumed to generalize unchanged to other cities.
+- OSM completeness and independent infrastructure ground truth remain unverified.
+- Cluster labels are not priority rankings.
+
+**Next milestone:** Develop the prototype's cluster-based infrastructure screening output, including interpretable descriptions, evidence limitations, and quality warnings.
