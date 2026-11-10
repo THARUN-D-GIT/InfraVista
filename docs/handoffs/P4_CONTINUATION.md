@@ -199,3 +199,36 @@ Generated:
 - Dataset is small and limited to two pilot areas.
 
 **Next milestone:** Exploratory K-Means clustering, evaluation of candidate cluster counts, and interpretation of infrastructure patterns. No infrastructure shortage or investment priority claims without additional evidence.
+### Milestone 4 — Coverage Sensitivity Analysis Completed
+
+**Module:** `src/infravista/screening/ml_coverage_sensitivity.py`
+
+**Outputs:**
+- `reports/p4_clustering/coverage_sensitivity/coverage_sensitivity_metrics.csv`
+- `reports/p4_clustering/coverage_sensitivity/coverage_sensitivity_assignments.csv`
+
+**Experiment:**
+- Baseline: 201 grid cells.
+- Minimum coverage >= 0.50: 156 cells.
+- Minimum coverage >= 0.75: 141 cells.
+- Tested K=3 and K=4.
+- NumPy-based K-Means++ with 20 initializations and random state 42.
+- Metrics: inertia, silhouette, Davies–Bouldin, Calinski–Harabasz, and Adjusted Rand Index (ARI).
+
+**Key results:**
+
+| Threshold | K=3 ARI | K=4 ARI |
+|---|---:|---:|
+| Baseline | 1.0000 | 1.0000 |
+| >= 0.50 | 0.9596 | 0.7877 |
+| >= 0.75 | 0.9334 | 0.7470 |
+
+**Decision:** K=3 selected as the primary provisional clustering candidate because its assignments remain more stable under coverage filtering. K=4 retained as a comparison candidate.
+
+**Limitations:**
+- Geometry coverage represents grid-cell overlap, not OSM completeness.
+- ARI measures assignment agreement on retained cells, not external validity.
+- Cluster IDs are arbitrary and do not represent priority rankings.
+- No infrastructure shortage or adequacy conclusions are established.
+
+**Next milestone:** Compare spatial cluster stability and raw infrastructure feature profiles across all three coverage thresholds.
