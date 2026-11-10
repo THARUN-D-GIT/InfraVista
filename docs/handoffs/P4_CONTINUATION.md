@@ -164,3 +164,38 @@ Develop evidence-based infrastructure planning recommendations, identifying the 
 ### Next Milestone
 Determine which validated external datasets are available and design an evidence-backed planning-readiness workflow before any infrastructure prioritization.
 
+### Milestone 4 — ML Feature Analysis and Preparation
+
+**Completed files:**
+- `src/infravista/screening/ml_feature_preparation.py` — grid coverage analysis.
+- `src/infravista/screening/ml_feature_analysis.py` — indicator distributions, zero percentages, skewness and IQR outlier analysis.
+- `src/infravista/screening/ml_feature_matrix.py` — feature selection, log transformation and standardization.
+
+**Feature preparation results:**
+- Source: P3 `indicators_grid.geojson`.
+- Grid cells: 201 (HSR: 101, Whitefield: 100).
+- Selected features: 11 across healthcare, education, transport and water.
+- Transformations: `log1p` for count and density features; water area share left untransformed.
+- Scaling: `sklearn.StandardScaler`.
+- Missing selected values: none.
+- NaN/infinite values in scaled matrix: zero.
+- No missing values imputed and no grid cells removed.
+
+**Output directory:** `data/processed/p4_ml/`
+
+Generated:
+- `feature_matrix_raw.csv`
+- `feature_matrix_log_transformed.csv`
+- `feature_matrix_scaled.csv`
+- `feature_matrix_metadata.csv`
+- `feature_matrix_summary.json`
+
+**Methodological limitations:**
+- OSM completeness remains unverified.
+- Zero means none mapped, not confirmed absence.
+- Coverage fraction measures cell overlap, not data completeness.
+- Low-coverage cells are retained and flagged for sensitivity analysis.
+- Feature selection is exploratory, not scientifically validated.
+- Dataset is small and limited to two pilot areas.
+
+**Next milestone:** Exploratory K-Means clustering, evaluation of candidate cluster counts, and interpretation of infrastructure patterns. No infrastructure shortage or investment priority claims without additional evidence.
