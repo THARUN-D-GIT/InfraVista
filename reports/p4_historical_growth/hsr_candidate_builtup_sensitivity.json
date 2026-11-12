@@ -1,0 +1,45 @@
+{
+  "area": "hsr",
+  "method": "Exploratory NDVI/NDBI/MNDWI candidate screening",
+  "thresholds": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "results": {
+    "2017-02-03": {
+      "0.0": {
+        "candidate_pixels": 9338,
+        "percentage_of_valid_pixels": 19.129
+      },
+      "0.05": {
+        "candidate_pixels": 8992,
+        "percentage_of_valid_pixels": 18.4202
+      },
+      "0.1": {
+        "candidate_pixels": 6453,
+        "percentage_of_valid_pixels": 13.219
+      }
+    },
+    "2025-02-06": {
+      "0.0": {
+        "candidate_pixels": 7366,
+        "percentage_of_valid_pixels": 15.0893
+      },
+      "0.05": {
+        "candidate_pixels": 7070,
+        "percentage_of_valid_pixels": 14.483
+      },
+      "0.1": {
+        "candidate_pixels": 4655,
+        "percentage_of_valid_pixels": 9.5358
+      }
+    }
+  },
+  "limitations": [
+    "Candidate pixels are not validated built-up pixels.",
+    "Bare soil and other surfaces may be misclassified.",
+    "No independent reference labels or accuracy assessment.",
+    "No urban-growth estimate should be derived from these counts."
+  ]
+}
