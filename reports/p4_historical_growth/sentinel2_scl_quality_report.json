@@ -1,0 +1,37 @@
+{
+  "raster": "data\\raw\\historical_sentinel2\\2017-02-03\\hsr\\SCL_20m.jp2",
+  "total_pixels": 30140100,
+  "classes": {
+    "0": {
+      "name": "No data",
+      "pixel_count": 547806,
+      "percentage": 1.8175
+    },
+    "2": {
+      "name": "Dark area pixels",
+      "pixel_count": 37268,
+      "percentage": 0.1236
+    },
+    "4": {
+      "name": "Vegetation",
+      "pixel_count": 5072602,
+      "percentage": 16.8301
+    },
+    "5": {
+      "name": "Bare soil",
+      "pixel_count": 24310288,
+      "percentage": 80.6576
+    },
+    "6": {
+      "name": "Water",
+      "pixel_count": 149443,
+      "percentage": 0.4958
+    },
+    "7": {
+      "name": "Unclassified",
+      "pixel_count": 22693,
+      "percentage": 0.0753
+    }
+  },
+  "nodata_metadata": null
+}

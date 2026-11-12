@@ -1,0 +1,15 @@
+k,cluster,area_id,cell_count
+3,0,hsr,16
+3,0,whitefield,36
+3,1,hsr,35
+3,1,whitefield,12
+3,2,hsr,50
+3,2,whitefield,52
+4,0,hsr,34
+4,0,whitefield,12
+4,1,hsr,7
+4,1,whitefield,3
+4,2,hsr,13
+4,2,whitefield,34
+4,3,hsr,47
+4,3,whitefield,51

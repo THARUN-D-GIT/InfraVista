@@ -1,0 +1,761 @@
+{
+  "source": "Copernicus Data Space Ecosystem STAC",
+  "collection": "sentinel-2-l2a",
+  "selected_dates": [
+    "2017-02-03",
+    "2025-02-06"
+  ],
+  "product_count": 6,
+  "products": [
+    {
+      "study_area": "hsr",
+      "date": "2017-02-03",
+      "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+      "platform": "sentinel-2a",
+      "cloud_cover": 0.0,
+      "available_asset_keys": [
+        "AOT_10m",
+        "AOT_20m",
+        "AOT_60m",
+        "B01_20m",
+        "B01_60m",
+        "B02_10m",
+        "B02_20m",
+        "B02_60m",
+        "B03_10m",
+        "B03_20m",
+        "B03_60m",
+        "B04_10m",
+        "B04_20m",
+        "B04_60m",
+        "B05_20m",
+        "B05_60m",
+        "B06_20m",
+        "B06_60m",
+        "B07_20m",
+        "B07_60m",
+        "B08_10m",
+        "B09_60m",
+        "B11_20m",
+        "B11_60m",
+        "B12_20m",
+        "B12_60m",
+        "B8A_20m",
+        "B8A_60m",
+        "CLD_20m",
+        "CLD_60m",
+        "Product",
+        "SCL_20m",
+        "SCL_60m",
+        "SNW_20m",
+        "SNW_60m",
+        "TCI_10m",
+        "TCI_20m",
+        "TCI_60m",
+        "WVP_10m",
+        "WVP_20m",
+        "WVP_60m",
+        "datastrip_metadata",
+        "granule_metadata",
+        "inspire_metadata",
+        "product_metadata",
+        "safe_manifest",
+        "thumbnail"
+      ],
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classification map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/QI_DATA/MSK_CLDPRB_20m.jp2",
+          "type": "image/jp2",
+          "title": "Cloud probability (CLD) - 20m",
+          "roles": [
+            "data",
+            "gsd:20m"
+          ]
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_10m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R10m/T43PGQ_20170203T051011_B08_10m.jp2",
+          "type": "image/jp2",
+          "title": "NIR 1 (band 8) - 10m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:10m"
+          ]
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "hsr",
+      "date": "2025-02-06",
+      "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+      "platform": "sentinel-2b",
+      "cloud_cover": 0.0,
+      "available_asset_keys": [
+        "AOT_10m",
+        "AOT_20m",
+        "AOT_60m",
+        "B01_20m",
+        "B01_60m",
+        "B02_10m",
+        "B02_20m",
+        "B02_60m",
+        "B03_10m",
+        "B03_20m",
+        "B03_60m",
+        "B04_10m",
+        "B04_20m",
+        "B04_60m",
+        "B05_20m",
+        "B05_60m",
+        "B06_20m",
+        "B06_60m",
+        "B07_20m",
+        "B07_60m",
+        "B08_10m",
+        "B09_60m",
+        "B11_20m",
+        "B11_60m",
+        "B12_20m",
+        "B12_60m",
+        "B8A_20m",
+        "B8A_60m",
+        "Product",
+        "SCL_20m",
+        "SCL_60m",
+        "TCI_10m",
+        "TCI_20m",
+        "TCI_60m",
+        "WVP_10m",
+        "WVP_20m",
+        "WVP_60m",
+        "datastrip_metadata",
+        "granule_metadata",
+        "inspire_metadata",
+        "product_metadata",
+        "safe_manifest",
+        "thumbnail"
+      ],
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classfication map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": false,
+          "href": null,
+          "type": null,
+          "title": null,
+          "roles": []
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_10m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R10m/T43PGQ_20250206T050909_B08_10m.jp2",
+          "type": "image/jp2",
+          "title": "NIR 1 (band 8) - 10m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:10m"
+          ]
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2017-02-03",
+      "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017",
+      "platform": "sentinel-2a",
+      "cloud_cover": 0.03,
+      "available_asset_keys": [
+        "AOT_10m",
+        "AOT_20m",
+        "AOT_60m",
+        "B01_20m",
+        "B01_60m",
+        "B02_10m",
+        "B02_20m",
+        "B02_60m",
+        "B03_10m",
+        "B03_20m",
+        "B03_60m",
+        "B04_10m",
+        "B04_20m",
+        "B04_60m",
+        "B05_20m",
+        "B05_60m",
+        "B06_20m",
+        "B06_60m",
+        "B07_20m",
+        "B07_60m",
+        "B08_10m",
+        "B09_60m",
+        "B11_20m",
+        "B11_60m",
+        "B12_20m",
+        "B12_60m",
+        "B8A_20m",
+        "B8A_60m",
+        "CLD_20m",
+        "CLD_60m",
+        "Product",
+        "SCL_20m",
+        "SCL_60m",
+        "SNW_20m",
+        "SNW_60m",
+        "TCI_10m",
+        "TCI_20m",
+        "TCI_60m",
+        "WVP_10m",
+        "WVP_20m",
+        "WVP_60m",
+        "datastrip_metadata",
+        "granule_metadata",
+        "inspire_metadata",
+        "product_metadata",
+        "safe_manifest",
+        "thumbnail"
+      ],
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classification map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/QI_DATA/MSK_CLDPRB_20m.jp2",
+          "type": "image/jp2",
+          "title": "Cloud probability (CLD) - 20m",
+          "roles": [
+            "data",
+            "gsd:20m"
+          ]
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_10m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R10m/T43PHQ_20170203T051011_B08_10m.jp2",
+          "type": "image/jp2",
+          "title": "NIR 1 (band 8) - 10m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:10m"
+          ]
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017.SAFE/GRANULE/L2A_T43PHQ_A008453_20170203T051647/IMG_DATA/R20m/T43PHQ_20170203T051011_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2017-02-03",
+      "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+      "platform": "sentinel-2a",
+      "cloud_cover": 0.0,
+      "available_asset_keys": [
+        "AOT_10m",
+        "AOT_20m",
+        "AOT_60m",
+        "B01_20m",
+        "B01_60m",
+        "B02_10m",
+        "B02_20m",
+        "B02_60m",
+        "B03_10m",
+        "B03_20m",
+        "B03_60m",
+        "B04_10m",
+        "B04_20m",
+        "B04_60m",
+        "B05_20m",
+        "B05_60m",
+        "B06_20m",
+        "B06_60m",
+        "B07_20m",
+        "B07_60m",
+        "B08_10m",
+        "B09_60m",
+        "B11_20m",
+        "B11_60m",
+        "B12_20m",
+        "B12_60m",
+        "B8A_20m",
+        "B8A_60m",
+        "CLD_20m",
+        "CLD_60m",
+        "Product",
+        "SCL_20m",
+        "SCL_60m",
+        "SNW_20m",
+        "SNW_60m",
+        "TCI_10m",
+        "TCI_20m",
+        "TCI_60m",
+        "WVP_10m",
+        "WVP_20m",
+        "WVP_60m",
+        "datastrip_metadata",
+        "granule_metadata",
+        "inspire_metadata",
+        "product_metadata",
+        "safe_manifest",
+        "thumbnail"
+      ],
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classification map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/QI_DATA/MSK_CLDPRB_20m.jp2",
+          "type": "image/jp2",
+          "title": "Cloud probability (CLD) - 20m",
+          "roles": [
+            "data",
+            "gsd:20m"
+          ]
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_10m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R10m/T43PGQ_20170203T051011_B08_10m.jp2",
+          "type": "image/jp2",
+          "title": "NIR 1 (band 8) - 10m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:10m"
+          ]
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A_N0500/2017/02/03/S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017.SAFE/GRANULE/L2A_T43PGQ_A008453_20170203T051647/IMG_DATA/R20m/T43PGQ_20170203T051011_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2025-02-06",
+      "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445",
+      "platform": "sentinel-2b",
+      "cloud_cover": 0.0,
+      "available_asset_keys": [
+        "AOT_10m",
+        "AOT_20m",
+        "AOT_60m",
+        "B01_20m",
+        "B01_60m",
+        "B02_10m",
+        "B02_20m",
+        "B02_60m",
+        "B03_10m",
+        "B03_20m",
+        "B03_60m",
+        "B04_10m",
+        "B04_20m",
+        "B04_60m",
+        "B05_20m",
+        "B05_60m",
+        "B06_20m",
+        "B06_60m",
+        "B07_20m",
+        "B07_60m",
+        "B08_10m",
+        "B09_60m",
+        "B11_20m",
+        "B11_60m",
+        "B12_20m",
+        "B12_60m",
+        "B8A_20m",
+        "B8A_60m",
+        "Product",
+        "SCL_20m",
+        "SCL_60m",
+        "TCI_10m",
+        "TCI_20m",
+        "TCI_60m",
+        "WVP_10m",
+        "WVP_20m",
+        "WVP_60m",
+        "datastrip_metadata",
+        "granule_metadata",
+        "inspire_metadata",
+        "product_metadata",
+        "safe_manifest",
+        "thumbnail"
+      ],
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classfication map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": false,
+          "href": null,
+          "type": null,
+          "title": null,
+          "roles": []
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_10m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R10m/T43PHQ_20250206T050909_B08_10m.jp2",
+          "type": "image/jp2",
+          "title": "NIR 1 (band 8) - 10m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:10m"
+          ]
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445.SAFE/GRANULE/L2A_T43PHQ_A041372_20250206T052454/IMG_DATA/R20m/T43PHQ_20250206T050909_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    },
+    {
+      "study_area": "whitefield",
+      "date": "2025-02-06",
+      "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+      "platform": "sentinel-2b",
+      "cloud_cover": 0.0,
+      "available_asset_keys": [
+        "AOT_10m",
+        "AOT_20m",
+        "AOT_60m",
+        "B01_20m",
+        "B01_60m",
+        "B02_10m",
+        "B02_20m",
+        "B02_60m",
+        "B03_10m",
+        "B03_20m",
+        "B03_60m",
+        "B04_10m",
+        "B04_20m",
+        "B04_60m",
+        "B05_20m",
+        "B05_60m",
+        "B06_20m",
+        "B06_60m",
+        "B07_20m",
+        "B07_60m",
+        "B08_10m",
+        "B09_60m",
+        "B11_20m",
+        "B11_60m",
+        "B12_20m",
+        "B12_60m",
+        "B8A_20m",
+        "B8A_60m",
+        "Product",
+        "SCL_20m",
+        "SCL_60m",
+        "TCI_10m",
+        "TCI_20m",
+        "TCI_60m",
+        "WVP_10m",
+        "WVP_20m",
+        "WVP_60m",
+        "datastrip_metadata",
+        "granule_metadata",
+        "inspire_metadata",
+        "product_metadata",
+        "safe_manifest",
+        "thumbnail"
+      ],
+      "assets": {
+        "SCL_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_SCL_20m.jp2",
+          "type": "image/jp2",
+          "title": "Scene classfication map (SCL) - 20m",
+          "roles": [
+            "data",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "CLD_20m": {
+          "available": false,
+          "href": null,
+          "type": null,
+          "title": null,
+          "roles": []
+        },
+        "B04_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B04_20m.jp2",
+          "type": "image/jp2",
+          "title": "Red (band 4) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:downsampled",
+            "gsd:20m"
+          ]
+        },
+        "B08_10m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R10m/T43PGQ_20250206T050909_B08_10m.jp2",
+          "type": "image/jp2",
+          "title": "NIR 1 (band 8) - 10m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:10m"
+          ]
+        },
+        "B11_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B11_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 1 (band 11) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        },
+        "B12_20m": {
+          "available": true,
+          "href": "s3://eodata/Sentinel-2/MSI/L2A/2025/02/06/S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445.SAFE/GRANULE/L2A_T43PGQ_A041372_20250206T052454/IMG_DATA/R20m/T43PGQ_20250206T050909_B12_20m.jp2",
+          "type": "image/jp2",
+          "title": "SWIR 2 (band 12) - 20m",
+          "roles": [
+            "data",
+            "reflectance",
+            "sampling:original",
+            "gsd:20m"
+          ]
+        }
+      }
+    }
+  ],
+  "analysis_resolution_m": 20,
+  "limitations": [
+    "STAC asset availability does not prove download access.",
+    "B08_10m requires alignment to the 20m analysis grid.",
+    "Pixel-level cloud and shadow coverage is not yet assessed.",
+    "Study-area raster coverage and alignment are not yet verified.",
+    "Whitefield requires two-tile coverage assessment.",
+    "Satellite products use different platforms and processing baselines."
+  ]
+}

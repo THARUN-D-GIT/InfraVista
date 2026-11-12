@@ -1,0 +1,944 @@
+{
+  "report_metadata": {
+    "report_type": "multi_sector_infrastructure_screening",
+    "screening_version": "p4_rules_v0.1.0",
+    "generated_at": "2026-11-10T06:30:00.684680+00:00",
+    "method": "evidence_based_multi_sector_screening",
+    "p3_run_id": "20261106T191045Z_indicators",
+    "p3_method_version": "p3_indicators_v0.1.0",
+    "p3_validation_status": "not validated (P6 independent review pending)",
+    "p3_rights_status": "review_required (inherits OSM/ODbL status from P2); team use only",
+    "interpretation": "Evidence screening only. Results do not establish infrastructure adequacy, shortage, or investment priority."
+  },
+  "principles": {
+    "missing_values_are_not_zero": true,
+    "do_not_infer_service_adequacy_from_counts": true,
+    "do_not_infer_demand_without_population_data": true,
+    "do_not_assign_arbitrary_sector_weights": true,
+    "osm_completeness_unverified": true,
+    "screening_is_not_a_final_infrastructure_gap_assessment": true
+  },
+  "study_areas": [
+    {
+      "area_id": "hsr",
+      "overall_evidence_status": "evidence_available",
+      "summary": {
+        "sector_count": 4,
+        "expected_indicator_count": 20,
+        "available_indicator_count": 18,
+        "missing_record_count": 2,
+        "null_value_count": 0
+      },
+      "sectors": [
+        {
+          "sector": "healthcare",
+          "description": "Healthcare facility evidence",
+          "evidence_status": "evidence_available",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "count_not_complete_inventory",
+            "osm_completeness_unverified",
+            "point_polygon_dedupe_assumption"
+          ],
+          "summary": {
+            "expected_indicator_count": 2,
+            "available_indicator_count": 2,
+            "missing_record_count": 0,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "facility_count_hospital",
+              "record_status": "available",
+              "value": 44.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_hospital",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_clinic",
+              "record_status": "available",
+              "value": 26.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_clinic",
+              "assessment": "evidence_available"
+            }
+          ]
+        },
+        {
+          "sector": "education",
+          "description": "Educational facility evidence",
+          "evidence_status": "evidence_available",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "count_not_complete_inventory",
+            "osm_completeness_unverified",
+            "point_polygon_dedupe_assumption"
+          ],
+          "summary": {
+            "expected_indicator_count": 2,
+            "available_indicator_count": 2,
+            "missing_record_count": 0,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "facility_count_school",
+              "record_status": "available",
+              "value": 70.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_school",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_college",
+              "record_status": "available",
+              "value": 13.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_college",
+              "assessment": "evidence_available"
+            }
+          ]
+        },
+        {
+          "sector": "transport",
+          "description": "Road and public transport infrastructure evidence",
+          "evidence_status": "evidence_available",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "centreline_length_not_lane_km",
+            "count_not_complete_inventory",
+            "osm_completeness_unverified",
+            "point_polygon_dedupe_assumption"
+          ],
+          "summary": {
+            "expected_indicator_count": 8,
+            "available_indicator_count": 8,
+            "missing_record_count": 0,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "road_density_km_per_km2_motorised_network",
+              "record_status": "available",
+              "value": 21.636828230296317,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_road_density_km_per_km2_motorised_network",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_pedestrian_cycle",
+              "record_status": "available",
+              "value": 2.9887661849303955,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_road_density_km_per_km2_pedestrian_cycle",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_service_and_track",
+              "record_status": "available",
+              "value": 3.2789128079215173,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_road_density_km_per_km2_service_and_track",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_not_existing",
+              "record_status": "available",
+              "value": 0.5285777136996743,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_road_density_km_per_km2_not_existing",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_other_unmapped_class",
+              "record_status": "available",
+              "value": 0.0,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_road_density_km_per_km2_other_unmapped_class",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_transit_platform",
+              "record_status": "available",
+              "value": 118.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_transit_platform",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_transit_station",
+              "record_status": "available",
+              "value": 8.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_transit_station",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_transit_stop_position",
+              "record_status": "available",
+              "value": 59.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_facility_count_transit_stop_position",
+              "assessment": "evidence_available"
+            }
+          ]
+        },
+        {
+          "sector": "water_infrastructure",
+          "description": "Waterway, drainage and mapped water-area evidence",
+          "evidence_status": "insufficient_evidence",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "osm_completeness_unverified",
+            "storm_drains_often_unmapped"
+          ],
+          "summary": {
+            "expected_indicator_count": 8,
+            "available_indicator_count": 6,
+            "missing_record_count": 2,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "water_area_share",
+              "record_status": "available",
+              "value": 0.06219170869581013,
+              "units": "fraction",
+              "denominator": 19603428.065911844,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_water_area_share",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_all",
+              "record_status": "available",
+              "value": 1.0553046933868637,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_waterway_density_km_per_km2_all",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_ditch",
+              "record_status": "available",
+              "value": 0.026620833333953316,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_waterway_density_km_per_km2_ditch",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_drain",
+              "record_status": "available",
+              "value": 1.012151008515598,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_waterway_density_km_per_km2_drain",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_lock_gate",
+              "record_status": "available",
+              "value": 0.00015925319891027057,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_waterway_density_km_per_km2_lock_gate",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_river",
+              "record_status": "missing_record",
+              "assessment": "insufficient_evidence",
+              "value": null,
+              "units": null,
+              "coverage_fraction": null,
+              "quality_flags": [
+                "indicator_record_missing"
+              ]
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_stream",
+              "record_status": "missing_record",
+              "assessment": "insufficient_evidence",
+              "value": null,
+              "units": null,
+              "coverage_fraction": null,
+              "quality_flags": [
+                "indicator_record_missing"
+              ]
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_weir",
+              "record_status": "available",
+              "value": 0.016373598338402174,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "hsr_window_waterway_density_km_per_km2_weir",
+              "assessment": "evidence_available"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area_id": "whitefield",
+      "overall_evidence_status": "evidence_available",
+      "summary": {
+        "sector_count": 4,
+        "expected_indicator_count": 20,
+        "available_indicator_count": 18,
+        "missing_record_count": 2,
+        "null_value_count": 0
+      },
+      "sectors": [
+        {
+          "sector": "healthcare",
+          "description": "Healthcare facility evidence",
+          "evidence_status": "evidence_available",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "count_not_complete_inventory",
+            "osm_completeness_unverified",
+            "point_polygon_dedupe_assumption"
+          ],
+          "summary": {
+            "expected_indicator_count": 2,
+            "available_indicator_count": 2,
+            "missing_record_count": 0,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "facility_count_hospital",
+              "record_status": "available",
+              "value": 11.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_hospital",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_clinic",
+              "record_status": "available",
+              "value": 17.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_clinic",
+              "assessment": "evidence_available"
+            }
+          ]
+        },
+        {
+          "sector": "education",
+          "description": "Educational facility evidence",
+          "evidence_status": "evidence_available",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "count_not_complete_inventory",
+            "osm_completeness_unverified",
+            "point_polygon_dedupe_assumption"
+          ],
+          "summary": {
+            "expected_indicator_count": 2,
+            "available_indicator_count": 2,
+            "missing_record_count": 0,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "facility_count_school",
+              "record_status": "available",
+              "value": 29.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_school",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_college",
+              "record_status": "available",
+              "value": 4.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_college",
+              "assessment": "evidence_available"
+            }
+          ]
+        },
+        {
+          "sector": "transport",
+          "description": "Road and public transport infrastructure evidence",
+          "evidence_status": "evidence_available",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "centreline_length_not_lane_km",
+            "count_not_complete_inventory",
+            "osm_completeness_unverified",
+            "point_polygon_dedupe_assumption"
+          ],
+          "summary": {
+            "expected_indicator_count": 8,
+            "available_indicator_count": 8,
+            "missing_record_count": 0,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "road_density_km_per_km2_motorised_network",
+              "record_status": "available",
+              "value": 12.284044776472019,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_road_density_km_per_km2_motorised_network",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_pedestrian_cycle",
+              "record_status": "available",
+              "value": 1.7269985395721736,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_road_density_km_per_km2_pedestrian_cycle",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_service_and_track",
+              "record_status": "available",
+              "value": 4.564880423641343,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_road_density_km_per_km2_service_and_track",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_not_existing",
+              "record_status": "available",
+              "value": 1.017611795015789,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_road_density_km_per_km2_not_existing",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "road_density_km_per_km2_other_unmapped_class",
+              "record_status": "available",
+              "value": 0.008552079599011032,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "centreline_length_not_lane_km",
+                "osm_completeness_unverified"
+              ],
+              "source_ids": "osm_roads_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_road_density_km_per_km2_other_unmapped_class",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_transit_platform",
+              "record_status": "available",
+              "value": 48.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_transit_platform",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_transit_station",
+              "record_status": "available",
+              "value": 3.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_transit_station",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "facility_count_transit_stop_position",
+              "record_status": "available",
+              "value": 23.0,
+              "units": "count",
+              "denominator": null,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "count_not_complete_inventory",
+                "osm_completeness_unverified",
+                "point_polygon_dedupe_assumption"
+              ],
+              "source_ids": "osm_facilities_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_facility_count_transit_stop_position",
+              "assessment": "evidence_available"
+            }
+          ]
+        },
+        {
+          "sector": "water_infrastructure",
+          "description": "Waterway, drainage and mapped water-area evidence",
+          "evidence_status": "insufficient_evidence",
+          "quality_review_required": true,
+          "quality_flags_requiring_review": [
+            "osm_completeness_unverified",
+            "storm_drains_often_unmapped"
+          ],
+          "summary": {
+            "expected_indicator_count": 8,
+            "available_indicator_count": 6,
+            "missing_record_count": 2,
+            "null_value_count": 0
+          },
+          "indicators": [
+            {
+              "indicator_id": "water_area_share",
+              "record_status": "available",
+              "value": 0.030033732507088174,
+              "units": "fraction",
+              "denominator": 19603428.065911844,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_water_area_share",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_all",
+              "record_status": "available",
+              "value": 1.266495749162826,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_waterway_density_km_per_km2_all",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_ditch",
+              "record_status": "missing_record",
+              "assessment": "insufficient_evidence",
+              "value": null,
+              "units": null,
+              "coverage_fraction": null,
+              "quality_flags": [
+                "indicator_record_missing"
+              ]
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_drain",
+              "record_status": "available",
+              "value": 0.9293922577593351,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_waterway_density_km_per_km2_drain",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_lock_gate",
+              "record_status": "missing_record",
+              "assessment": "insufficient_evidence",
+              "value": null,
+              "units": null,
+              "coverage_fraction": null,
+              "quality_flags": [
+                "indicator_record_missing"
+              ]
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_river",
+              "record_status": "available",
+              "value": 0.18838771851175384,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_waterway_density_km_per_km2_river",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_stream",
+              "record_status": "available",
+              "value": 0.14053920568693262,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_waterway_density_km_per_km2_stream",
+              "assessment": "evidence_available"
+            },
+            {
+              "indicator_id": "waterway_density_km_per_km2_weir",
+              "record_status": "available",
+              "value": 0.008176567204804508,
+              "units": "km/km2",
+              "denominator": 19.603428065911846,
+              "coverage_fraction": 1.0,
+              "evidence_type": "derived",
+              "quality_flags": [
+                "osm_completeness_unverified",
+                "storm_drains_often_unmapped"
+              ],
+              "source_ids": "osm_water_2026_11",
+              "acquired_at": "2026-11-03",
+              "method_version": "p3_indicators_v0.1.0",
+              "run_id": "20261106T191045Z_indicators",
+              "feature_id": "whitefield_window_waterway_density_km_per_km2_weir",
+              "assessment": "evidence_available"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

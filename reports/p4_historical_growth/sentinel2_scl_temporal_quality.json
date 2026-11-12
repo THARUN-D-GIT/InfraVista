@@ -1,0 +1,56 @@
+{
+  "areas": {
+    "hsr": {
+      "window_pixels": 49012,
+      "2017_usable_pixels": 48960,
+      "2025_usable_pixels": 48982,
+      "common_usable_pixels": 48940,
+      "common_usable_percentage": 99.8531,
+      "2017_cloud_shadow_pixels": 0,
+      "2025_cloud_shadow_pixels": 0,
+      "2017_class_counts": {
+        "2": 63,
+        "4": 4104,
+        "5": 43681,
+        "6": 1112,
+        "7": 52
+      },
+      "2025_class_counts": {
+        "2": 114,
+        "4": 11093,
+        "5": 36264,
+        "6": 1511,
+        "7": 30
+      }
+    },
+    "whitefield": {
+      "window_pixels": 49007,
+      "2017_usable_pixels": 48948,
+      "2025_usable_pixels": 48907,
+      "common_usable_pixels": 48853,
+      "common_usable_percentage": 99.6858,
+      "2017_cloud_shadow_pixels": 0,
+      "2025_cloud_shadow_pixels": 0,
+      "2017_class_counts": {
+        "2": 24,
+        "4": 12277,
+        "5": 35890,
+        "6": 757,
+        "7": 59
+      },
+      "2025_class_counts": {
+        "2": 69,
+        "4": 13257,
+        "5": 35158,
+        "6": 423,
+        "7": 100
+      }
+    }
+  },
+  "limitations": [
+    "P3 pilot geometries are not approved authoritative boundaries.",
+    "SCL quality is not built-up classification or growth measurement.",
+    "This checks only the downloaded T43PGQ tile.",
+    "Additional spectral bands and classification validation are required."
+  ]
+}

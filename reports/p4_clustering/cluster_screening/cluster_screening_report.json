@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "screening_version": "p4_cluster_screening_v0.1.0",
+  "method": "numpy_kmeans_k3_baseline",
+  "study_area_count": 2,
+  "grid_cell_count": 201,
+  "feature_count": 11,
+  "cluster_count": 3,
+  "cluster_descriptions": {
+    "0": "Lower mapped healthcare facility counts and relatively higher mapped waterway density.",
+    "1": "Higher mapped healthcare, education and transit counts, alongside higher motorised road density.",
+    "2": "Relatively lower mapped waterway density and lower mapped facility counts compared with Cluster 1."
+  },
+  "clusters": [
+    {
+      "cluster": 0,
+      "cluster_description": "Lower mapped healthcare facility counts and relatively higher mapped waterway density.",
+      "grid_count": 52,
+      "area_distribution": {
+        "hsr": 16,
+        "whitefield": 36
+      },
+      "mean_minimum_indicator_coverage": 0.840288,
+      "median_minimum_indicator_coverage": 1.0,
+      "cells_below_50_percent_coverage": 8,
+      "quality_review_cells": 52,
+      "quality_flag_counts": {
+        "none_mapped_not_confirmed_absent": 52,
+        "osm_completeness_unverified": 52,
+        "point_polygon_dedupe_assumption": 52,
+        "storm_drains_often_unmapped": 52,
+        "partial_cell_coverage": 21,
+        "small_denominator": 4
+      },
+      "mean_raw_indicator_values": {
+        "facility_count_hospital": 0.057692,
+        "facility_count_clinic": 0.0,
+        "facility_count_school": 0.269231,
+        "road_density_km_per_km2_motorised_network": 12.13597,
+        "road_density_km_per_km2_pedestrian_cycle": 1.30049,
+        "road_density_km_per_km2_service_and_track": 3.508973,
+        "facility_count_transit_platform": 0.269231,
+        "facility_count_transit_stop_position": 0.096154,
+        "water_area_share": 0.106689,
+        "waterway_density_km_per_km2_all": 2.834898,
+        "waterway_density_km_per_km2_drain": 2.226279
+      },
+      "interpretation": "Descriptive profile; not a priority ranking."
+    },
+    {
+      "cluster": 1,
+      "cluster_description": "Higher mapped healthcare, education and transit counts, alongside higher motorised road density.",
+      "grid_count": 47,
+      "area_distribution": {
+        "hsr": 35,
+        "whitefield": 12
+      },
+      "mean_minimum_indicator_coverage": 0.975293,
+      "median_minimum_indicator_coverage": 1.0,
+      "cells_below_50_percent_coverage": 1,
+      "quality_review_cells": 47,
+      "quality_flag_counts": {
+        "osm_completeness_unverified": 47,
+        "point_polygon_dedupe_assumption": 47,
+        "storm_drains_often_unmapped": 47,
+        "none_mapped_not_confirmed_absent": 43,
+        "partial_cell_coverage": 3
+      },
+      "mean_raw_indicator_values": {
+        "facility_count_hospital": 0.893617,
+        "facility_count_clinic": 0.787234,
+        "facility_count_school": 1.12766,
+        "road_density_km_per_km2_motorised_network": 24.488285,
+        "road_density_km_per_km2_pedestrian_cycle": 5.47981,
+        "road_density_km_per_km2_service_and_track": 4.144021,
+        "facility_count_transit_platform": 2.893617,
+        "facility_count_transit_stop_position": 1.531915,
+        "water_area_share": 0.013697,
+        "waterway_density_km_per_km2_all": 1.140711,
+        "waterway_density_km_per_km2_drain": 1.124159
+      },
+      "interpretation": "Descriptive profile; not a priority ranking."
+    },
+    {
+      "cluster": 2,
+      "cluster_description": "Relatively lower mapped waterway density and lower mapped facility counts compared with Cluster 1.",
+      "grid_count": 102,
+      "area_distribution": {
+        "hsr": 50,
+        "whitefield": 52
+      },
+      "mean_minimum_indicator_coverage": 0.659742,
+      "median_minimum_indicator_coverage": 0.947193,
+      "cells_below_50_percent_coverage": 36,
+      "quality_review_cells": 102,
+      "quality_flag_counts": {
+        "none_mapped_not_confirmed_absent": 102,
+        "osm_completeness_unverified": 102,
+        "point_polygon_dedupe_assumption": 102,
+        "storm_drains_often_unmapped": 102,
+        "partial_cell_coverage": 56,
+        "small_denominator": 26
+      },
+      "mean_raw_indicator_values": {
+        "facility_count_hospital": 0.098039,
+        "facility_count_clinic": 0.058824,
+        "facility_count_school": 0.313725,
+        "road_density_km_per_km2_motorised_network": 14.416717,
+        "road_density_km_per_km2_pedestrian_cycle": 1.19252,
+        "road_density_km_per_km2_service_and_track": 4.18418,
+        "facility_count_transit_platform": 0.156863,
+        "facility_count_transit_stop_position": 0.04902,
+        "water_area_share": 0.050663,
+        "waterway_density_km_per_km2_all": 0.046087,
+        "waterway_density_km_per_km2_drain": 0.033802
+      },
+      "interpretation": "Descriptive profile; not a priority ranking."
+    }
+  ],
+  "area_context": [
+    {
+      "area_id": "hsr",
+      "grid_count": 101,
+      "cluster_distribution": {
+        "0": 16,
+        "1": 35,
+        "2": 50
+      },
+      "mean_minimum_indicator_coverage": 0.776373,
+      "cells_below_50_percent_coverage": 23
+    },
+    {
+      "area_id": "whitefield",
+      "grid_count": 100,
+      "cluster_distribution": {
+        "0": 36,
+        "1": 12,
+        "2": 52
+      },
+      "mean_minimum_indicator_coverage": 0.784137,
+      "cells_below_50_percent_coverage": 22
+    }
+  ],
+  "limitations": [
+    "Cluster labels describe similarities in mapped indicators; they are not priority rankings.",
+    "Zero means no feature was mapped in the available data, not confirmed infrastructure absence.",
+    "OSM completeness and facility inventory completeness are unverified.",
+    "Geometry coverage measures grid overlap, not source-data completeness or accuracy.",
+    "The analysis covers only the two pilot study areas.",
+    "Infrastructure shortage, service adequacy and investment priority are not established."
+  ],
+  "decision": {
+    "primary_configuration": "K=3 provisional",
+    "priority_ranking": "not_assessed",
+    "infrastructure_shortage": "not_established",
+    "service_adequacy": "not_established"
+  },
+  "outputs": {
+    "grid_screening": "C:\\Users\\Varun\\InfraVista\\reports\\p4_clustering\\cluster_screening\\grid_cluster_screening.csv",
+    "cluster_summary": "C:\\Users\\Varun\\InfraVista\\reports\\p4_clustering\\cluster_screening\\cluster_profile_summary.csv"
+  }
+}

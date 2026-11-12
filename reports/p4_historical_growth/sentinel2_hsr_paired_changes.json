@@ -1,0 +1,28 @@
+{
+  "area": "hsr",
+  "date_from": "2017-02-03",
+  "date_to": "2025-02-06",
+  "indices": {
+    "NDVI": {
+      "paired_pixels": 48816,
+      "mean_change": 0.0146920932456851,
+      "median_change": 0.015005966648459435,
+      "p05_change": -0.22687813639640808,
+      "p95_change": 0.24677646160125732,
+      "increased_pixels": 28342,
+      "decreased_pixels": 20474,
+      "unchanged_pixels": 0
+    },
+    "NDBI": {
+      "paired_pixels": 48816,
+      "mean_change": -0.03883003070950508,
+      "median_change": -0.027276501059532166,
+      "p05_change": -0.2180294543504715,
+      "p95_change": 0.10705849528312683,
+      "increased_pixels": 16731,
+      "decreased_pixels": 32083,
+      "unchanged_pixels": 2
+    }
+  },
+  "interpretation": "Descriptive paired spectral changes only; not land-cover transitions."
+}

@@ -1,0 +1,75 @@
+{
+  "report_type": "exploratory_spatial_cluster_visualization",
+  "method": "existing_kmeans_k3_baseline_assignments",
+  "source_geometry_crs": "EPSG:4326",
+  "output_crs": "EPSG:4326",
+  "grid_cell_count": 201,
+  "area_count": 2,
+  "cluster_count": 3,
+  "areas": [
+    {
+      "area_id": "hsr",
+      "grid_count": 101,
+      "cluster_distribution": [
+        {
+          "cluster": 0,
+          "grid_count": 16,
+          "mean_minimum_indicator_coverage": 0.828205638125,
+          "cells_below_50_percent_coverage": 2,
+          "quality_review_cells": 16
+        },
+        {
+          "cluster": 1,
+          "grid_count": 35,
+          "mean_minimum_indicator_coverage": 0.9776792337142857,
+          "cells_below_50_percent_coverage": 1,
+          "quality_review_cells": 35
+        },
+        {
+          "cluster": 2,
+          "grid_count": 50,
+          "mean_minimum_indicator_coverage": 0.6188729772,
+          "cells_below_50_percent_coverage": 20,
+          "quality_review_cells": 50
+        }
+      ],
+      "cells_below_50_percent_coverage": 23
+    },
+    {
+      "area_id": "whitefield",
+      "grid_count": 100,
+      "cluster_distribution": [
+        {
+          "cluster": 0,
+          "grid_count": 36,
+          "mean_minimum_indicator_coverage": 0.845657462222222,
+          "cells_below_50_percent_coverage": 6,
+          "quality_review_cells": 36
+        },
+        {
+          "cluster": 1,
+          "grid_count": 12,
+          "mean_minimum_indicator_coverage": 0.9683346008333333,
+          "cells_below_50_percent_coverage": 0,
+          "quality_review_cells": 12
+        },
+        {
+          "cluster": 2,
+          "grid_count": 52,
+          "mean_minimum_indicator_coverage": 0.6990390073076921,
+          "cells_below_50_percent_coverage": 16,
+          "quality_review_cells": 52
+        }
+      ],
+      "cells_below_50_percent_coverage": 22
+    }
+  ],
+  "interpretation": "Maps show descriptive mapped-infrastructure cluster patterns only. They do not establish infrastructure shortages, service adequacy, or investment priorities.",
+  "limitations": [
+    "OSM completeness is unverified.",
+    "Geometry coverage is not a measure of OSM completeness.",
+    "P6 independent validation remains pending.",
+    "OSM/ODbL rights review remains pending; team use only.",
+    "Cluster assignments are exploratory and provisional."
+  ]
+}

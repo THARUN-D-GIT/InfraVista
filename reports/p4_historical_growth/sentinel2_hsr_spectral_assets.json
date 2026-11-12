@@ -1,0 +1,170 @@
+[
+  {
+    "date": "2017-02-03",
+    "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+    "band": "B04_20m",
+    "path": "data\\raw\\historical_sentinel2\\2017-02-03\\hsr\\B04_20m.jp2",
+    "size_bytes": 33912587,
+    "crs": "EPSG:32643",
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "width": 5490,
+    "height": 5490,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2017-02-03",
+    "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+    "band": "B08_10m",
+    "path": "data\\raw\\historical_sentinel2\\2017-02-03\\hsr\\B08_10m.jp2",
+    "size_bytes": 135063467,
+    "crs": "EPSG:32643",
+    "resolution": [
+      10.0,
+      10.0
+    ],
+    "width": 10980,
+    "height": 10980,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2017-02-03",
+    "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+    "band": "B11_20m",
+    "path": "data\\raw\\historical_sentinel2\\2017-02-03\\hsr\\B11_20m.jp2",
+    "size_bytes": 33855342,
+    "crs": "EPSG:32643",
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "width": 5490,
+    "height": 5490,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2017-02-03",
+    "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+    "band": "B12_20m",
+    "path": "data\\raw\\historical_sentinel2\\2017-02-03\\hsr\\B12_20m.jp2",
+    "size_bytes": 33758815,
+    "crs": "EPSG:32643",
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "width": 5490,
+    "height": 5490,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2025-02-06",
+    "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+    "band": "B04_20m",
+    "path": "data\\raw\\historical_sentinel2\\2025-02-06\\hsr\\B04_20m.jp2",
+    "size_bytes": 33906320,
+    "crs": "EPSG:32643",
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "width": 5490,
+    "height": 5490,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2025-02-06",
+    "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+    "band": "B08_10m",
+    "path": "data\\raw\\historical_sentinel2\\2025-02-06\\hsr\\B08_10m.jp2",
+    "size_bytes": 135533943,
+    "crs": "EPSG:32643",
+    "resolution": [
+      10.0,
+      10.0
+    ],
+    "width": 10980,
+    "height": 10980,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2025-02-06",
+    "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+    "band": "B11_20m",
+    "path": "data\\raw\\historical_sentinel2\\2025-02-06\\hsr\\B11_20m.jp2",
+    "size_bytes": 33710988,
+    "crs": "EPSG:32643",
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "width": 5490,
+    "height": 5490,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  },
+  {
+    "date": "2025-02-06",
+    "product_id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+    "band": "B12_20m",
+    "path": "data\\raw\\historical_sentinel2\\2025-02-06\\hsr\\B12_20m.jp2",
+    "size_bytes": 33731329,
+    "crs": "EPSG:32643",
+    "resolution": [
+      20.0,
+      20.0
+    ],
+    "width": 5490,
+    "height": 5490,
+    "dtype": "uint16",
+    "bounds": [
+      699960.0,
+      1390200.0,
+      809760.0,
+      1500000.0
+    ]
+  }
+]

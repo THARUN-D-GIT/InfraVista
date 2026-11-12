@@ -1,0 +1,23 @@
+{
+  "area": "hsr",
+  "common_valid_pixels": 48940,
+  "dates": {
+    "2017-02-03": {
+      "mean": -0.3692285716533661,
+      "median": -0.35605645179748535,
+      "p05": -0.6582534909248352,
+      "p95": -0.14514043927192688
+    },
+    "2025-02-06": {
+      "mean": -0.31182438135147095,
+      "median": -0.3073965609073639,
+      "p05": -0.5906481742858887,
+      "p95": -0.06748273223638535
+    }
+  },
+  "limitations": [
+    "Common mask applies to B03/B11 and SCL, not all spectral bands.",
+    "MNDWI is water-sensitive, not a validated water classification.",
+    "No built-up area or historical growth is estimated."
+  ]
+}

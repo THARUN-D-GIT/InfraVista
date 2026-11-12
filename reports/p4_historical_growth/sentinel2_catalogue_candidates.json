@@ -1,0 +1,714 @@
+{
+  "collection": "sentinel-2-l2a",
+  "catalogue": "https://stac.dataspace.copernicus.eu/v1/search",
+  "search_type": "bounding_box_candidate_search",
+  "periods": {
+    "2017": "2017-01-01T00:00:00Z/2017-03-01T00:00:00Z",
+    "2025": "2025-01-01T00:00:00Z/2025-03-01T00:00:00Z"
+  },
+  "areas": {
+    "hsr": {
+      "2017": {
+        "candidate_count": 4,
+        "candidates": [
+          {
+            "id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PGQ_20231025T175541",
+            "datetime": "2017-02-23T05:08:11.026000Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.56081013967883
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+            "datetime": "2017-02-03T05:10:11.026000Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560784961075067
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PGQ_20230918T011518",
+            "datetime": "2017-01-24T05:11:01.026000Z",
+            "cloud_cover_percent": 0.01,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560747624662824
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PGQ_20230916T012105",
+            "datetime": "2017-01-14T05:11:41.026000Z",
+            "cloud_cover_percent": 0.47,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560752181471079
+            ]
+          }
+        ]
+      },
+      "2025": {
+        "candidate_count": 12,
+        "candidates": [
+          {
+            "id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PGQ_20250226T071341",
+            "datetime": "2025-02-26T05:06:59.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560993539275287
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PGQ_20250216T073441",
+            "datetime": "2025-02-16T05:08:09.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.56103311677715
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+            "datetime": "2025-02-06T05:09:09.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560902
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PGQ_20250122T084110",
+            "datetime": "2025-01-22T05:11:51.025Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.561048
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PGQ_20250221T120413",
+            "datetime": "2025-02-21T05:08:51.025Z",
+            "cloud_cover_percent": 0.000654,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.5608801430433
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PGQ_20250211T102211",
+            "datetime": "2025-02-11T05:10:01.025Z",
+            "cloud_cover_percent": 0.001635,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560981143469471
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PGQ_20250107T080132",
+            "datetime": "2025-01-07T05:11:19.024Z",
+            "cloud_cover_percent": 1.23,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560924
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PGQ_20250112T082206",
+            "datetime": "2025-01-12T05:11:51.024Z",
+            "cloud_cover_percent": 3.1,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560829
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PGQ_20250127T075517",
+            "datetime": "2025-01-27T05:10:09.024Z",
+            "cloud_cover_percent": 4.03,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560961
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PGQ_20250117T093134",
+            "datetime": "2025-01-17T05:10:39.024Z",
+            "cloud_cover_percent": 23.13,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.56085
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PGQ_20250201T095810",
+            "datetime": "2025-02-01T05:11:01.025Z",
+            "cloud_cover_percent": 25.877291,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.56100814397598
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PGQ_20250102T080951",
+            "datetime": "2025-01-02T05:12:21.024Z",
+            "cloud_cover_percent": 55.97,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560941
+            ]
+          }
+        ]
+      }
+    },
+    "whitefield": {
+      "2017": {
+        "candidate_count": 8,
+        "candidates": [
+          {
+            "id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PHQ_20231025T175541",
+            "datetime": "2017-02-23T05:08:11.026000Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170223T050811_N0500_R019_T43PGQ_20231025T175541",
+            "datetime": "2017-02-23T05:08:11.026000Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.56081013967883
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+            "datetime": "2017-02-03T05:10:11.026000Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560784961075067
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PGQ_20230918T011518",
+            "datetime": "2017-01-24T05:11:01.026000Z",
+            "cloud_cover_percent": 0.01,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560747624662824
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PHQ_20230925T185017",
+            "datetime": "2017-02-03T05:10:11.026000Z",
+            "cloud_cover_percent": 0.03,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PGQ_20230916T012105",
+            "datetime": "2017-01-14T05:11:41.026000Z",
+            "cloud_cover_percent": 0.47,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560752181471079
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170124T051101_N0500_R019_T43PHQ_20230918T011518",
+            "datetime": "2017-01-24T05:11:01.026000Z",
+            "cloud_cover_percent": 6.53,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20170114T051141_N0500_R019_T43PHQ_20230916T012105",
+            "datetime": "2017-01-14T05:11:41.026000Z",
+            "cloud_cover_percent": 25.06,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          }
+        ]
+      },
+      "2025": {
+        "candidate_count": 24,
+        "candidates": [
+          {
+            "id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PGQ_20250226T071341",
+            "datetime": "2025-02-26T05:06:59.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560993539275287
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PHQ_20250216T073441",
+            "datetime": "2025-02-16T05:08:09.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250216T050809_N0511_R019_T43PGQ_20250216T073441",
+            "datetime": "2025-02-16T05:08:09.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.56103311677715
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PHQ_20250206T071445",
+            "datetime": "2025-02-06T05:09:09.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250206T050909_N0511_R019_T43PGQ_20250206T071445",
+            "datetime": "2025-02-06T05:09:09.024Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560902
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PGQ_20250122T084110",
+            "datetime": "2025-01-22T05:11:51.025Z",
+            "cloud_cover_percent": 0.0,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.561048
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PHQ_20250221T120413",
+            "datetime": "2025-02-21T05:08:51.025Z",
+            "cloud_cover_percent": 2.7e-05,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250221T050851_N0511_R019_T43PGQ_20250221T120413",
+            "datetime": "2025-02-21T05:08:51.025Z",
+            "cloud_cover_percent": 0.000654,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.5608801430433
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PHQ_20250211T102211",
+            "datetime": "2025-02-11T05:10:01.025Z",
+            "cloud_cover_percent": 0.001155,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250211T051001_N0511_R019_T43PGQ_20250211T102211",
+            "datetime": "2025-02-11T05:10:01.025Z",
+            "cloud_cover_percent": 0.001635,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.560981143469471
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250226T050659_N0511_R019_T43PHQ_20250226T071341",
+            "datetime": "2025-02-26T05:06:59.024Z",
+            "cloud_cover_percent": 0.01,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PHQ_20250127T075517",
+            "datetime": "2025-01-27T05:10:09.024Z",
+            "cloud_cover_percent": 0.18,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PGQ_20250107T080132",
+            "datetime": "2025-01-07T05:11:19.024Z",
+            "cloud_cover_percent": 1.23,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560924
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PGQ_20250112T082206",
+            "datetime": "2025-01-12T05:11:51.024Z",
+            "cloud_cover_percent": 3.1,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560829
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250127T051009_N0511_R019_T43PGQ_20250127T075517",
+            "datetime": "2025-01-27T05:10:09.024Z",
+            "cloud_cover_percent": 4.03,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560961
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20250112T051151_N0511_R019_T43PHQ_20250112T082206",
+            "datetime": "2025-01-12T05:11:51.024Z",
+            "cloud_cover_percent": 6.12,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PHQ_20250201T095810",
+            "datetime": "2025-02-01T05:11:01.025Z",
+            "cloud_cover_percent": 9.494909,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.76054418161176,
+              12.549052156698295,
+              78.78469868127031,
+              13.553067829846247
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250107T051119_N0511_R019_T43PHQ_20250107T080132",
+            "datetime": "2025-01-07T05:11:19.024Z",
+            "cloud_cover_percent": 12.04,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250122T051151_N0511_R019_T43PHQ_20250122T084110",
+            "datetime": "2025-01-22T05:11:51.025Z",
+            "cloud_cover_percent": 19.79,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PGQ_20250117T093134",
+            "datetime": "2025-01-17T05:10:39.024Z",
+            "cloud_cover_percent": 23.13,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.56085
+            ]
+          },
+          {
+            "id": "S2C_MSIL2A_20250201T051101_N0511_R019_T43PGQ_20250201T095810",
+            "datetime": "2025-02-01T05:11:01.025Z",
+            "cloud_cover_percent": 25.877291,
+            "platform": "sentinel-2c",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.84053428354963,
+              12.560404476746363,
+              77.86186761560747,
+              13.56100814397598
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PHQ_20250102T080951",
+            "datetime": "2025-01-02T05:12:21.024Z",
+            "cloud_cover_percent": 41.85,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          },
+          {
+            "id": "S2A_MSIL2A_20250102T051221_N0511_R019_T43PGQ_20250102T080951",
+            "datetime": "2025-01-02T05:12:21.024Z",
+            "cloud_cover_percent": 55.97,
+            "platform": "sentinel-2a",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              76.840534,
+              12.560404,
+              77.861868,
+              13.560941
+            ]
+          },
+          {
+            "id": "S2B_MSIL2A_20250117T051039_N0511_R019_T43PHQ_20250117T093134",
+            "datetime": "2025-01-17T05:10:39.024Z",
+            "cloud_cover_percent": 82.76,
+            "platform": "sentinel-2b",
+            "processing_level": "L2",
+            "mgrs_tile": null,
+            "bbox": [
+              77.760544,
+              12.549052,
+              78.784699,
+              13.553068
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "P3 pilot window geometries are used as search proxies.",
+    "Bounding-box intersection does not prove exact polygon intersection.",
+    "Cloud cover is scene-level metadata, not study-area cloud cover.",
+    "No imagery has been downloaded or processed.",
+    "Catalogue availability does not establish classification suitability."
+  ]
+}

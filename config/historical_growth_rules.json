@@ -1,0 +1,183 @@
+
+{
+  "schema_version": "1.0.0",
+  "project": "InfraVista",
+  "module": "P4",
+  "purpose": "Specification for satellite-derived historical built-up change indicators",
+  "status": "proposed_pending_methodology_and_data_approval",
+  "primary_method": "multi_temporal_satellite_built_up_change",
+  "supporting_evidence": [
+    "P3 geospatial infrastructure indicators",
+    "Historical population data, when available",
+    "Infrastructure capacity and accessibility data, when available"
+  ],
+  "comparison_requirements": {
+    "minimum_observations": 2,
+    "chronological_order_required": true,
+    "same_study_area_required": true,
+    "seasonal_comparability_required": true,
+    "compatible_crs_required": true,
+    "compatible_spatial_resolution_required": true,
+    "cloud_mask_required": true,
+    "nodata_mask_required": true,
+    "rights_clearance_required": true,
+    "raster_alignment_verification_required": true,
+    "consistent_classification_method_required": true
+  },
+  "built_up_classification": {
+    "description": "A documented classification identifying built-up pixels in each observation.",
+    "representation": {
+      "built_up": 1,
+      "non_built_up": 0,
+      "invalid_or_unobserved": null
+    },
+    "classification_method": "not_yet_selected",
+    "accuracy_assessment_required": true,
+    "classification_thresholds_must_be_documented": true
+  },
+  "indicators": [
+    {
+      "id": "built_up_area",
+      "name": "Built-up Area",
+      "description": "Total mapped built-up area within the valid study-area observation.",
+      "unit": "km2",
+      "calculation": "built_up_pixel_count * pixel_area_m2 / 1000000",
+      "required_inputs": [
+        "built_up_classification_raster",
+        "pixel_area_m2",
+        "study_area_boundary",
+        "valid_data_mask"
+      ],
+      "interpretation": "Measures mapped built-up extent, not population or infrastructure adequacy."
+    },
+    {
+      "id": "new_built_up_area",
+      "name": "New Built-up Area",
+      "description": "Area classified as non-built-up in the earlier observation and built-up in the later observation.",
+      "unit": "km2",
+      "calculation": "count(valid_pixels where earlier_class == 0 and later_class == 1) * pixel_area_m2 / 1000000",
+      "required_inputs": [
+        "earlier_built_up_classification",
+        "later_built_up_classification",
+        "common_valid_data_mask",
+        "pixel_area_m2"
+      ],
+      "interpretation": "Indicates mapped built-up gain between observations; classification errors can create false change."
+    },
+    {
+      "id": "built_up_area_loss",
+      "name": "Built-up Area Loss",
+      "description": "Area classified as built-up in the earlier observation and non-built-up in the later observation.",
+      "unit": "km2",
+      "calculation": "count(valid_pixels where earlier_class == 1 and later_class == 0) * pixel_area_m2 / 1000000",
+      "required_inputs": [
+        "earlier_built_up_classification",
+        "later_built_up_classification",
+        "common_valid_data_mask",
+        "pixel_area_m2"
+      ],
+      "interpretation": "Indicates mapped built-up loss; it does not independently explain why the change occurred."
+    },
+    {
+      "id": "net_built_up_change",
+      "name": "Net Built-up Change",
+      "description": "Difference between later and earlier built-up area over comparable valid observations.",
+      "unit": "km2",
+      "calculation": "later_built_up_area - earlier_built_up_area",
+      "required_inputs": [
+        "earlier_built_up_area",
+        "later_built_up_area"
+      ],
+      "interpretation": "Positive values indicate net mapped expansion; negative values indicate net mapped reduction."
+    },
+    {
+      "id": "built_up_change_percentage",
+      "name": "Built-up Change Percentage",
+      "description": "Percentage change in built-up area relative to the earlier observation.",
+      "unit": "percent",
+      "calculation": "((later_built_up_area - earlier_built_up_area) / earlier_built_up_area) * 100",
+      "required_inputs": [
+        "earlier_built_up_area",
+        "later_built_up_area"
+      ],
+      "validity_conditions": [
+        "Earlier built-up area must be greater than zero.",
+        "Both observations must use comparable valid-data coverage."
+      ],
+      "interpretation": "Do not calculate when earlier built-up area is zero."
+    }
+  ],
+  "spatial_pattern_analysis": {
+    "status": "proposed_not_implemented",
+    "patterns": [
+      {
+        "id": "infill",
+        "description": "New built-up development within or surrounded by previously developed areas."
+      },
+      {
+        "id": "edge_expansion",
+        "description": "New built-up development adjoining the previous built-up boundary."
+      },
+      {
+        "id": "leapfrog",
+        "description": "New built-up development spatially separated from previous built-up areas."
+      },
+      {
+        "id": "fragmentation",
+        "description": "Change in the spatial arrangement and connectivity of built-up patches."
+      }
+    ],
+    "requirements": [
+      "Define neighbourhood and connectivity rules before analysis.",
+      "Document patch-size thresholds and distance parameters.",
+      "Validate classification and spatial-pattern results.",
+      "Do not assign arbitrary development-pattern labels."
+    ]
+  },
+  "quality_controls": [
+    "Use a common valid-data mask for pixel-level change comparisons.",
+    "Exclude cloud-contaminated and NoData pixels.",
+    "Verify raster dimensions, transforms, CRS and pixel alignment.",
+    "Document classification accuracy and uncertainty.",
+    "Report valid observation coverage.",
+    "Do not interpret unavailable pixels as non-built-up.",
+    "Do not interpret missing evidence as zero growth."
+  ],
+  "infrastructure_demand_assessment": {
+    "status": "future_stage",
+    "principle": "Built-up expansion alone does not establish infrastructure shortage or demand.",
+    "sectors": {
+      "healthcare": [
+        "Population growth",
+        "Healthcare facility capacity",
+        "Travel time and service areas"
+      ],
+      "education": [
+        "School-age population",
+        "Enrolment",
+        "Education facility capacity",
+        "Travel time"
+      ],
+      "transport": [
+        "Population and employment distribution",
+        "Traffic demand",
+        "Network connectivity",
+        "Travel time"
+      ],
+      "water": [
+        "Population and water demand",
+        "Drainage completeness",
+        "Rainfall and flood history",
+        "Elevation",
+        "Water supply and sanitation coverage"
+      ]
+    }
+  },
+  "reporting_safeguards": {
+    "no_growth_claim_without_valid_raster_analysis": true,
+    "no_forecast_without_validated_temporal_model": true,
+    "no_infrastructure_shortage_claim_without_demand_and_capacity_evidence": true,
+    "no_investment_priority_without_approved_decision_framework": true,
+    "p6_independent_validation_required_before_validation_claim": true
+  }
+}

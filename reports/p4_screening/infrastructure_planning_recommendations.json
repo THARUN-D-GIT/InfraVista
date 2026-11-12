@@ -1,0 +1,490 @@
+{
+  "report_metadata": {
+    "report_type": "infrastructure_planning_recommendations",
+    "recommendation_version": "p4_planning_v0.1.0",
+    "generated_at": "2026-11-10T07:32:34.884499+00:00",
+    "source_analysis_version": "p4_gap_analysis_v0.1.0",
+    "p3_run_id": "20261106T191045Z_indicators",
+    "p3_method_version": "p3_indicators_v0.1.0",
+    "p3_validation_status": "not validated (P6 independent review pending)",
+    "p3_rights_status": "review_required (inherits OSM/ODbL status from P2); team use only",
+    "interpretation": "Recommendations describe data collection, validation and planning actions. They do not represent confirmed infrastructure shortages or investment priorities."
+  },
+  "methodology": {
+    "evidence_based_recommendations": true,
+    "arbitrary_sector_weights_used": false,
+    "infrastructure_shortage_scores_calculated": false,
+    "investment_priorities_assigned": false,
+    "source_validation_required": true
+  },
+  "study_areas": [
+    {
+      "area_id": "hsr",
+      "source_evidence_gap_summary": {
+        "sectors_with_evidence_gaps": [
+          "water_infrastructure"
+        ],
+        "sectors_requiring_data_quality_review": [
+          "healthcare",
+          "education",
+          "transport",
+          "water_infrastructure"
+        ],
+        "available_indicator_count": 18,
+        "missing_record_count": 2,
+        "null_value_count": 0
+      },
+      "sector_recommendations": [
+        {
+          "sector": "healthcare",
+          "evidence_gap_status": "no_missing_indicator_records_detected",
+          "missing_indicator_ids": [],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "population",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "facility_capacity",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "travel_time",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "service_area",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "count_not_complete_inventory",
+              "recommended_action": "Verify facility inventories using official department records before interpreting facility counts."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "point_polygon_dedupe_assumption",
+              "recommended_action": "Review facility deduplication assumptions and compare mapped facilities against verified inventories."
+            }
+          ],
+          "planning_actions": [
+            "Map healthcare facility service areas.",
+            "Estimate population access using validated travel-time networks.",
+            "Compare facility capacity with population and healthcare demand."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        },
+        {
+          "sector": "education",
+          "evidence_gap_status": "no_missing_indicator_records_detected",
+          "missing_indicator_ids": [],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "school_enrolment",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "student_population",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "facility_capacity",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "travel_time",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "count_not_complete_inventory",
+              "recommended_action": "Verify facility inventories using official department records before interpreting facility counts."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "point_polygon_dedupe_assumption",
+              "recommended_action": "Review facility deduplication assumptions and compare mapped facilities against verified inventories."
+            }
+          ],
+          "planning_actions": [
+            "Map school and college accessibility.",
+            "Compare enrolment and student population with verified capacity.",
+            "Assess travel-time access to educational facilities."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        },
+        {
+          "sector": "transport",
+          "evidence_gap_status": "no_missing_indicator_records_detected",
+          "missing_indicator_ids": [],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "population",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "road_condition",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "network_connectivity",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "travel_time",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "traffic_demand",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "centreline_length_not_lane_km",
+              "recommended_action": "Validate road measurements against road-width and lane-level datasets before using them for transport capacity analysis."
+            },
+            {
+              "quality_flag": "count_not_complete_inventory",
+              "recommended_action": "Verify facility inventories using official department records before interpreting facility counts."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "point_polygon_dedupe_assumption",
+              "recommended_action": "Review facility deduplication assumptions and compare mapped facilities against verified inventories."
+            }
+          ],
+          "planning_actions": [
+            "Validate road connectivity and network completeness.",
+            "Assess road condition and public transport accessibility.",
+            "Compare travel times and traffic demand across the study area."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        },
+        {
+          "sector": "water_infrastructure",
+          "evidence_gap_status": "evidence_gap_identified",
+          "missing_indicator_ids": [
+            "waterway_density_km_per_km2_river",
+            "waterway_density_km_per_km2_stream"
+          ],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "drainage_network_completeness",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "flood_history",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "rainfall",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "elevation",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "water_supply_and_sanitation_coverage",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "indicator_record_missing",
+              "recommended_action": "Investigate the missing indicator record and verify source coverage, extraction and preprocessing."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "storm_drains_often_unmapped",
+              "recommended_action": "Obtain municipal storm-water drain records and validate drainage coverage through field or geospatial checks."
+            }
+          ],
+          "planning_actions": [
+            "Map drainage and waterway network completeness.",
+            "Combine rainfall, elevation and historical flood observations.",
+            "Assess water supply and sanitation coverage using verified records."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        }
+      ],
+      "overall_planning_readiness": "additional_evidence_and_validation_required",
+      "investment_priority_assessment": "not_assessed_insufficient_evidence"
+    },
+    {
+      "area_id": "whitefield",
+      "source_evidence_gap_summary": {
+        "sectors_with_evidence_gaps": [
+          "water_infrastructure"
+        ],
+        "sectors_requiring_data_quality_review": [
+          "healthcare",
+          "education",
+          "transport",
+          "water_infrastructure"
+        ],
+        "available_indicator_count": 18,
+        "missing_record_count": 2,
+        "null_value_count": 0
+      },
+      "sector_recommendations": [
+        {
+          "sector": "healthcare",
+          "evidence_gap_status": "no_missing_indicator_records_detected",
+          "missing_indicator_ids": [],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "population",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "facility_capacity",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "travel_time",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "service_area",
+              "purpose": "Required to support evidence-based healthcare infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "count_not_complete_inventory",
+              "recommended_action": "Verify facility inventories using official department records before interpreting facility counts."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "point_polygon_dedupe_assumption",
+              "recommended_action": "Review facility deduplication assumptions and compare mapped facilities against verified inventories."
+            }
+          ],
+          "planning_actions": [
+            "Map healthcare facility service areas.",
+            "Estimate population access using validated travel-time networks.",
+            "Compare facility capacity with population and healthcare demand."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        },
+        {
+          "sector": "education",
+          "evidence_gap_status": "no_missing_indicator_records_detected",
+          "missing_indicator_ids": [],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "school_enrolment",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "student_population",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "facility_capacity",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "travel_time",
+              "purpose": "Required to support evidence-based education infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "count_not_complete_inventory",
+              "recommended_action": "Verify facility inventories using official department records before interpreting facility counts."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "point_polygon_dedupe_assumption",
+              "recommended_action": "Review facility deduplication assumptions and compare mapped facilities against verified inventories."
+            }
+          ],
+          "planning_actions": [
+            "Map school and college accessibility.",
+            "Compare enrolment and student population with verified capacity.",
+            "Assess travel-time access to educational facilities."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        },
+        {
+          "sector": "transport",
+          "evidence_gap_status": "no_missing_indicator_records_detected",
+          "missing_indicator_ids": [],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "population",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "road_condition",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "network_connectivity",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "travel_time",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "traffic_demand",
+              "purpose": "Required to support evidence-based transport infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "centreline_length_not_lane_km",
+              "recommended_action": "Validate road measurements against road-width and lane-level datasets before using them for transport capacity analysis."
+            },
+            {
+              "quality_flag": "count_not_complete_inventory",
+              "recommended_action": "Verify facility inventories using official department records before interpreting facility counts."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "point_polygon_dedupe_assumption",
+              "recommended_action": "Review facility deduplication assumptions and compare mapped facilities against verified inventories."
+            }
+          ],
+          "planning_actions": [
+            "Validate road connectivity and network completeness.",
+            "Assess road condition and public transport accessibility.",
+            "Compare travel times and traffic demand across the study area."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        },
+        {
+          "sector": "water_infrastructure",
+          "evidence_gap_status": "evidence_gap_identified",
+          "missing_indicator_ids": [
+            "waterway_density_km_per_km2_ditch",
+            "waterway_density_km_per_km2_lock_gate"
+          ],
+          "null_value_indicator_ids": [],
+          "data_collection_actions": [
+            {
+              "dataset": "drainage_network_completeness",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "flood_history",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "rainfall",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "elevation",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            },
+            {
+              "dataset": "water_supply_and_sanitation_coverage",
+              "purpose": "Required to support evidence-based water_infrastructure infrastructure assessment.",
+              "status": "additional_data_required"
+            }
+          ],
+          "data_quality_actions": [
+            {
+              "quality_flag": "indicator_record_missing",
+              "recommended_action": "Investigate the missing indicator record and verify source coverage, extraction and preprocessing."
+            },
+            {
+              "quality_flag": "osm_completeness_unverified",
+              "recommended_action": "Cross-check mapped infrastructure against authoritative government or local-body datasets and conduct field verification."
+            },
+            {
+              "quality_flag": "storm_drains_often_unmapped",
+              "recommended_action": "Obtain municipal storm-water drain records and validate drainage coverage through field or geospatial checks."
+            }
+          ],
+          "planning_actions": [
+            "Map drainage and waterway network completeness.",
+            "Combine rainfall, elevation and historical flood observations.",
+            "Assess water supply and sanitation coverage using verified records."
+          ],
+          "planning_readiness": "additional_evidence_and_validation_required",
+          "investment_priority_assessment": "not_assessed_insufficient_evidence"
+        }
+      ],
+      "overall_planning_readiness": "additional_evidence_and_validation_required",
+      "investment_priority_assessment": "not_assessed_insufficient_evidence"
+    }
+  ]
+}

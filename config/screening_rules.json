@@ -1,0 +1,98 @@
+
+{
+  "schema_version": "1.0.0",
+  "screening_version": "p4_rules_v0.1.0",
+  "method": "evidence_based_multi_sector_screening",
+  "principles": {
+    "missing_values_are_not_zero": true,
+    "do_not_infer_service_adequacy_from_counts": true,
+    "do_not_infer_demand_without_population_data": true,
+    "do_not_assign_arbitrary_sector_weights": true,
+    "osm_completeness_unverified": true,
+    "screening_is_not_a_final_infrastructure_gap_assessment": true
+  },
+  "sectors": {
+    "healthcare": {
+      "description": "Healthcare facility evidence",
+      "indicators": [
+        "facility_count_hospital",
+        "facility_count_clinic"
+      ]
+    },
+    "education": {
+      "description": "Educational facility evidence",
+      "indicators": [
+        "facility_count_school",
+        "facility_count_college"
+      ]
+    },
+    "transport": {
+      "description": "Road and public transport infrastructure evidence",
+      "indicators": [
+        "road_density_km_per_km2_motorised_network",
+        "road_density_km_per_km2_pedestrian_cycle",
+        "road_density_km_per_km2_service_and_track",
+        "road_density_km_per_km2_not_existing",
+        "road_density_km_per_km2_other_unmapped_class",
+        "facility_count_transit_platform",
+        "facility_count_transit_station",
+        "facility_count_transit_stop_position"
+      ]
+    },
+    "water_infrastructure": {
+      "description": "Waterway, drainage and mapped water-area evidence",
+      "indicators": [
+        "water_area_share",
+        "waterway_density_km_per_km2_all",
+        "waterway_density_km_per_km2_ditch",
+        "waterway_density_km_per_km2_drain",
+        "waterway_density_km_per_km2_lock_gate",
+        "waterway_density_km_per_km2_river",
+        "waterway_density_km_per_km2_stream",
+        "waterway_density_km_per_km2_weir"
+      ]
+    }
+  },
+  "assessment": {
+    "available_record": "evidence_available",
+    "missing_record": "insufficient_evidence",
+    "null_value": "value_unavailable",
+    "quality_warning": "requires_data_review",
+    "no_records": "no_evidence"
+  },
+  "quality_flags_requiring_review": [
+    "osm_completeness_unverified",
+    "count_not_complete_inventory",
+    "storm_drains_often_unmapped",
+    "centreline_length_not_lane_km",
+    "point_polygon_dedupe_assumption"
+  ],
+  "future_data_requirements": {
+    "healthcare": [
+      "population",
+      "facility_capacity",
+      "travel_time",
+      "service_area"
+    ],
+    "education": [
+      "school_enrolment",
+      "student_population",
+      "facility_capacity",
+      "travel_time"
+    ],
+    "transport": [
+      "population",
+      "road_condition",
+      "network_connectivity",
+      "travel_time",
+      "traffic_demand"
+    ],
+    "water_infrastructure": [
+      "drainage_network_completeness",
+      "flood_history",
+      "rainfall",
+      "elevation",
+      "water_supply_and_sanitation_coverage"
+    ]
+  }
+}

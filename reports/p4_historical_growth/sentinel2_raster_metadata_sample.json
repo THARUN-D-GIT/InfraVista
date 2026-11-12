@@ -1,0 +1,26 @@
+{
+  "product_id": "S2A_MSIL2A_20170203T051011_N0500_R019_T43PGQ_20230925T185017",
+  "study_area": "hsr",
+  "date": "2017-02-03",
+  "asset": "SCL_20m",
+  "driver": "JP2OpenJPEG",
+  "width": 5490,
+  "height": 5490,
+  "count": 1,
+  "crs": "EPSG:32643",
+  "resolution": [
+    20.0,
+    20.0
+  ],
+  "bounds": [
+    699960.0,
+    1390200.0,
+    809760.0,
+    1500000.0
+  ],
+  "dtype": [
+    "uint8"
+  ],
+  "nodata": null,
+  "file_size_bytes": 3062558
+}
