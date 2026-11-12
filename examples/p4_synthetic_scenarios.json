@@ -1,0 +1,42 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "demo_hsr_pedestrian_001",
+      "baseline": {
+        "area_id": "hsr",
+        "sector": "transport",
+        "description": "Existing transport conditions are not independently established; baseline is descriptive only."
+      },
+      "intervention": {
+        "option_id": "hypothetical_pedestrian_001",
+        "area_id": "hsr",
+        "sector": "transport",
+        "description": "Hypothetical pedestrian connectivity improvement; no actual site proposed.",
+        "evidence": {
+          "network_indicator_available": true,
+          "site_specific_accessibility_verified": false
+        },
+        "constraints": {
+          "land_availability": "unknown",
+          "regulatory_permission": "unknown",
+          "technical_feasibility": "unknown"
+        },
+        "side_effects": {
+          "flood_hazard": "unknown",
+          "environment": "unknown",
+          "water": "unknown",
+          "terrain": "unknown",
+          "access_equity": "unknown"
+        }
+      },
+      "assumptions": [
+        "This scenario is hypothetical and not an actual site proposal.",
+        "No P1-approved planning use case has been confirmed.",
+        "Infrastructure demand and intervention benefits have not been quantified."
+      ],
+      "proposed_effects": [
+        "Pedestrian connectivity could potentially improve if site feasibility and network analysis support the intervention."
+      ]
+    }
+  ]
+}
