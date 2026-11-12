@@ -1,0 +1,25 @@
+{
+  "area": "hsr",
+  "dates": [
+    "2017-02-03",
+    "2025-02-06"
+  ],
+  "threshold": 0.05,
+  "rule": "NDBI > threshold AND NDBI > NDVI AND MNDWI < 0",
+  "common_valid_pixels": 48816,
+  "candidate_2017": 8992,
+  "candidate_2025": 7070,
+  "transition_counts": {
+    "Non-candidate both dates": 37101,
+    "Candidate both dates": 4347,
+    "Candidate only in 2017": 4645,
+    "Candidate only in 2025": 2723
+  },
+  "limitations": [
+    "Exploratory spectral-screening transitions only.",
+    "Not a validated built-up land-cover classification.",
+    "Candidate losses are not confirmed demolition.",
+    "Candidate gains are not confirmed construction.",
+    "No urban growth rate or area estimate is established."
+  ]
+}
