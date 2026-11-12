@@ -1,0 +1,48 @@
+{
+  "area": "hsr",
+  "dates": [
+    "2017-02-03",
+    "2025-02-06"
+  ],
+  "common_valid_pixels": 48816,
+  "indices": {
+    "2017-02-03": {
+      "NDVI": {
+        "count": 48816,
+        "mean": 0.26948392391204834,
+        "median": 0.2101309895515442,
+        "p05": 0.03471318632364273,
+        "p95": 0.679768443107605
+      },
+      "NDBI": {
+        "count": 48816,
+        "mean": 0.04053275287151337,
+        "median": 0.05915353447198868,
+        "p05": -0.15654930472373962,
+        "p95": 0.16849133372306824
+      }
+    },
+    "2025-02-06": {
+      "NDVI": {
+        "count": 48816,
+        "mean": 0.2841759920120239,
+        "median": 0.20369964838027954,
+        "p05": 0.04399651288986206,
+        "p95": 0.7099657654762268
+      },
+      "NDBI": {
+        "count": 48816,
+        "mean": 0.0017027202993631363,
+        "median": 0.022885307669639587,
+        "p05": -0.22187155485153198,
+        "p95": 0.1454804539680481
+      }
+    }
+  },
+  "limitations": [
+    "Pilot P3 window, not an approved authoritative boundary.",
+    "NDBI is not a built-up land-cover classification.",
+    "No independent classification accuracy assessment.",
+    "No urban-growth measurement or forecast performed."
+  ]
+}

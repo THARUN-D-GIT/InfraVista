@@ -1,0 +1,72 @@
+{
+  "date": "2017-02-03",
+  "asset": "SCL_20m",
+  "method": "GDAL geometry transformation; pixel-centre inclusion",
+  "limitations": [
+    "P3 pilot windows are not approved authoritative boundaries.",
+    "EPSG:4326 is inferred from GeoJSON longitude/latitude coordinates.",
+    "Only the HSR tile is downloaded; Whitefield may need multiple tiles.",
+    "Class 2 dark-area pixels remain uncertain.",
+    "No historical change assessment has been performed."
+  ],
+  "areas": {
+    "hsr": {
+      "geometry_crs_assumption": "EPSG:4326",
+      "raster_crs": "EPSG:32643",
+      "window_pixel_count": 49012,
+      "usable_pixel_count": 48960,
+      "usable_pixel_percentage": 99.8939,
+      "class_distribution": {
+        "dark_area": {
+          "pixel_count": 63,
+          "percentage": 0.1285
+        },
+        "vegetation": {
+          "pixel_count": 4104,
+          "percentage": 8.3735
+        },
+        "bare_soil": {
+          "pixel_count": 43681,
+          "percentage": 89.1231
+        },
+        "water": {
+          "pixel_count": 1112,
+          "percentage": 2.2688
+        },
+        "unclassified": {
+          "pixel_count": 52,
+          "percentage": 0.1061
+        }
+      }
+    },
+    "whitefield": {
+      "geometry_crs_assumption": "EPSG:4326",
+      "raster_crs": "EPSG:32643",
+      "window_pixel_count": 49007,
+      "usable_pixel_count": 48948,
+      "usable_pixel_percentage": 99.8796,
+      "class_distribution": {
+        "dark_area": {
+          "pixel_count": 24,
+          "percentage": 0.049
+        },
+        "vegetation": {
+          "pixel_count": 12277,
+          "percentage": 25.0515
+        },
+        "bare_soil": {
+          "pixel_count": 35890,
+          "percentage": 73.2344
+        },
+        "water": {
+          "pixel_count": 757,
+          "percentage": 1.5447
+        },
+        "unclassified": {
+          "pixel_count": 59,
+          "percentage": 0.1204
+        }
+      }
+    }
+  }
+}
